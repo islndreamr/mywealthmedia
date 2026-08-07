@@ -1,0 +1,35 @@
+{
+  "summary": "Frontend-only regression test of static site https://megan-ops.preview.emergentagent.com after hero headline fix (image -> Italiana text). All requested checks pass on desktop (1920x800) and mobile (390x844).",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_results": {
+    "hero_is_real_text_not_image": "PASS - h1#hero-title contains <span class='mask'><span class='mask-inner'>Operations</span></span>, no <img> in headline",
+    "font_family_italiana": "PASS - computed font-family: 'Italiana, Georgia, serif' on both h1 and .mask-inner; font-size 168px desktop; color rgb(255,237,215)",
+    "uppercase_via_css": "PASS - visually renders as 'OPERATIONS'",
+    "desktop_no_overflow_1920": "PASS - docWidth 1920 == winWidth 1920; h1 width 1192px, mask-inner 1016px (well inside)",
+    "mobile_no_overflow_390": "PASS - docWidth 390 == winWidth 390; heroWidth 342",
+    "no_broken_images": "PASS - 6 imgs (mwm-mark.png x2, hero.jpg, icon-1/2/3.jpg) all naturalWidth > 0; no 4xx responses",
+    "on_load_reveal": "PASS - body has classes 'has-cursor loaded'; .mask-inner transform is identity (revealed)",
+    "scroll_reveal": "PASS - after scrolling to y=1500, 6 of 13 .reveal elements got .in-view",
+    "about_line_highlight": "PASS - .about .body inline style --p updated to '1.000' on scroll",
+    "custom_cursor": "PASS - .cursor-dot and .cursor-ring present, body has 'has-cursor' class",
+    "contact_and_instagram": "PASS - mailto anchor and instagram link both present",
+    "console_errors": "None (only benign cloudflare cdn-cgi/rum aborts, unrelated to app)"
+  },
+  "test_report_links": ["/app/test_reports/hero_desktop.png", "/app/test_reports/hero_mobile.png"],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Two <img> elements point to /assets/mwm-mark.png with different alt attributes (one empty, one 'My Wealth Media') - consider consolidating or ensuring intended duplication is accessible.",
+    "Hero <img alt='Megan Lemay, operator, San Diego'> is meaningful; other decorative icon-1/2/3.jpg have empty alt which is correct."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (no backend)", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Static site served from /app/frontend/public. Hero headline is now real text using Italiana Google Font (see index.html h1#hero-title). All animations (on-load reveal, scroll reveal, about line highlight, cursor, tilt) confirmed working. Use semantic selectors — no data-testid on this site."
+}
