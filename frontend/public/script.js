@@ -62,6 +62,51 @@
     );
   }
 
+  // ---- Custom cursor (desktop pointer only) ----
+  if (finePointer) {
+    var dot = document.createElement("div");
+    var ring = document.createElement("div");
+    dot.className = "cursor-dot";
+    ring.className = "cursor-ring";
+    document.body.appendChild(dot);
+    document.body.appendChild(ring);
+    document.body.classList.add("has-cursor");
+
+    var mx = -100, my = -100, rx = -100, ry = -100, cursorRaf = null;
+
+    function cursorLoop() {
+      rx += (mx - rx) * 0.18;
+      ry += (my - ry) * 0.18;
+      ring.style.transform = "translate3d(" + rx + "px," + ry + "px,0)";
+      dot.style.transform = "translate3d(" + mx + "px," + my + "px,0)";
+      cursorRaf = requestAnimationFrame(cursorLoop);
+    }
+
+    document.addEventListener("mousemove", function (e) {
+      mx = e.clientX;
+      my = e.clientY;
+      document.body.classList.add("cursor-visible");
+      if (cursorRaf === null) {
+        rx = mx;
+        ry = my;
+        cursorRaf = requestAnimationFrame(cursorLoop);
+      }
+    });
+    document.addEventListener("mouseleave", function () {
+      document.body.classList.remove("cursor-visible");
+    });
+
+    var softTargets = document.querySelectorAll("a, button, .card");
+    softTargets.forEach(function (el) {
+      el.addEventListener("mouseenter", function () {
+        document.body.classList.add("cursor-soft");
+      });
+      el.addEventListener("mouseleave", function () {
+        document.body.classList.remove("cursor-soft");
+      });
+    });
+  }
+
   // ---- Card tilt (desktop pointer only) ----
   if (finePointer && !reduce) {
     var cards = document.querySelectorAll(".card");

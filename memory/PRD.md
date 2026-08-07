@@ -25,3 +25,16 @@ Single-page static marketing site for "My Wealth Media", the personal brand of M
 ## Backlog
 - P1: Megan uploads real assets (hero.jpg, icon-1..3.png, mwm-mark.png, og-image.png, favicons).
 - P2: Optional Zaslia display-font swap via --font-display.
+
+## Session 2 — June 2026 (Assets + Polish)
+- Uploaded Megan's MWM logo mark (`/assets/mwm-mark.png`, 256px optimized) + generated favicons (32/180/512/ico) and og-image.png from it
+- Hero headline changed OPERATOR → OPERATIONS, rendered as a generated Zaslia-style transparent PNG wordmark (`/assets/operations-wordmark.png`) since the paid font is unavailable; sr-only text kept for accessibility/SEO
+- Generated on-brand imagery (rose-gold/sunset editorial): hero.jpg + icon-1/2/3.jpg for the three cards
+- Added film grain overlay (SVG feTurbulence, body::after, subtle shimmer under prefers-reduced-motion guard)
+- Added desktop-only custom cursor (dot + lerped ring, softens over links/buttons/cards, pure vanilla JS + CSS)
+- Meta/OG titles updated to "Operations"
+- Verified via screenshots: hero wordmark, card photos, cursor, grain all rendering
+
+### Remaining backlog
+- P2: Swap wordmark image for real licensed Zaslia webfont if Megan ever buys it
+- P2: Netlify deploy when user is ready (netlify.toml + _headers already in place)
