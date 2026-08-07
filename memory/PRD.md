@@ -43,3 +43,11 @@ Single-page static marketing site for "My Wealth Media", the personal brand of M
 - Scroll Highlights: About paragraphs get line-by-line rose-gold (#E3B695) highlight via background-clip:text gradient + rAF scroll progress (--p custom property). Reduced-motion safe.
 - BUG FIX: blurry OPERATIONS hero image replaced with real vector text — Italiana font, clamp(3.4rem, 11vw, 10.5rem), wordmark PNG deleted, preload removed. Verified by testing_agent (iteration_1.json, 100% pass desktop + mobile).
 - Netlify: user instructed to Save to GitHub (islndreamr/mywealthmedia) then import into Netlify; netlify.toml (publish=frontend/public, no build) confirmed correct.
+
+## Session 2 — Senior pass (June 2026)
+- Removed duplicate top-left corner logo (.mark-fixed); hero mark is now the single brand mark
+- Testimonial section added between Cards and Contact: "Megan found the money we were losing and built the systems that stopped it." — Joseph Ortega · CEO, 7FCC (data-testid=testimonial-quote)
+- OG polish: regenerated 1200x630 og-image.png (composited hero photo + MWM mark + Italiana OPERATIONS wordmark via PIL), absolute og:image/twitter:image URLs at https://mywealthmedia.com, og:url, canonical link, JSON-LD ProfessionalService schema
+- Perf: hero.jpg 96KB, cards resized 820px 69-87KB each
+- Verified: testing_agent iteration_2.json — 100% pass, no regressions
+- NOTE: og meta assumes production domain mywealthmedia.com (from Megan's email). If final domain differs (e.g. *.netlify.app), update the 4 absolute URLs in index.html head.
