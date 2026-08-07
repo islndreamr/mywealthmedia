@@ -89,6 +89,37 @@
     updateHighlight();
   }
 
+  // ---- Testimonial rotation ----
+  var rotor = document.getElementById("testimonial-rotor");
+  if (rotor && !reduce) {
+    var quotes = [
+      {
+        text: "Megan found the money we were losing and built the systems that stopped it.",
+        cite: "Joseph Ortega\u2002\u00b7\u2002CEO, 7FCC"
+      },
+      {
+        text: "Our CRM finally tells the truth. So does our P&L.",
+        cite: "Founder\u2002\u00b7\u2002Online education company"
+      },
+      {
+        text: "She rebuilt our delivery while we were still selling. No client felt a thing.",
+        cite: "COO\u2002\u00b7\u2002High ticket coaching company"
+      }
+    ];
+    var qi = 0;
+    var quoteText = document.getElementById("quote-text");
+    var quoteCite = document.getElementById("quote-cite");
+    setInterval(function () {
+      rotor.classList.add("is-fading");
+      setTimeout(function () {
+        qi = (qi + 1) % quotes.length;
+        quoteText.textContent = quotes[qi].text;
+        quoteCite.textContent = quotes[qi].cite;
+        rotor.classList.remove("is-fading");
+      }, 520);
+    }, 7500);
+  }
+
   // ---- Custom cursor (desktop pointer only) ----
   if (finePointer) {
     var dot = document.createElement("div");

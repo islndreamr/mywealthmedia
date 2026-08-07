@@ -199,12 +199,12 @@ button:focus-visible {
 .eyebrow--accent.eyebrow { margin-bottom: 22px; }
 
 .hero-title {
-  font-family: var(--font-display);
-  font-weight: 400;
+  font-family: 'Cormorant', Georgia, serif;
+  font-weight: 300;
   color: var(--cream);
   text-transform: uppercase;
-  font-size: clamp(3.4rem, 11vw, 10.5rem);
-  letter-spacing: 0.05em;
+  font-size: clamp(3.6rem, 11.5vw, 11rem);
+  letter-spacing: 0.02em;
   line-height: 0.9;
   margin: 0 0 26px;
 }
@@ -403,6 +403,14 @@ button:focus-visible {
   color: var(--rose-gold);
   opacity: 0.55;
   margin-bottom: 18px;
+}
+.testimonial-rotor {
+  min-height: 9.5em;
+  transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+}
+.testimonial-rotor.is-fading {
+  opacity: 0;
+  transform: translateY(10px);
 }
 .testimonial-inner blockquote { margin: 0; }
 .quote {
