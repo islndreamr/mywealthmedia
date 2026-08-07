@@ -511,6 +511,20 @@ button:focus-visible {
   .cards .card:nth-child(2) { transition-delay: 90ms; }
   .cards .card:nth-child(3) { transition-delay: 180ms; }
 
+  /* About: line-by-line rose-gold scroll highlight */
+  .about .body:not(.body--feature) {
+    --p: 0;
+    background-image: linear-gradient(
+      to bottom,
+      #E3B695 calc(var(--p) * 100% - 6%),
+      var(--muted) calc(var(--p) * 100% + 6%)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
   /* Hero on-load: elements */
   .h-reveal {
     opacity: 0;

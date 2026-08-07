@@ -62,6 +62,33 @@
     );
   }
 
+  // ---- About paragraphs: line-by-line highlight on scroll ----
+  var aboutParas = document.querySelectorAll(".about .body:not(.body--feature)");
+  if (aboutParas.length && !reduce) {
+    var hlTicking = false;
+    function updateHighlight() {
+      var trigger = window.innerHeight * 0.72;
+      aboutParas.forEach(function (p) {
+        var r = p.getBoundingClientRect();
+        if (r.top > window.innerHeight || r.bottom < 0) return;
+        var progress = (trigger - r.top) / r.height;
+        p.style.setProperty("--p", Math.min(1, Math.max(0, progress)).toFixed(3));
+      });
+      hlTicking = false;
+    }
+    window.addEventListener(
+      "scroll",
+      function () {
+        if (!hlTicking) {
+          requestAnimationFrame(updateHighlight);
+          hlTicking = true;
+        }
+      },
+      { passive: true }
+    );
+    updateHighlight();
+  }
+
   // ---- Custom cursor (desktop pointer only) ----
   if (finePointer) {
     var dot = document.createElement("div");
