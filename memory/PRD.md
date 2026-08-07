@@ -38,3 +38,8 @@ Single-page static marketing site for "My Wealth Media", the personal brand of M
 ### Remaining backlog
 - P2: Swap wordmark image for real licensed Zaslia webfont if Megan ever buys it
 - P2: Netlify deploy when user is ready (netlify.toml + _headers already in place)
+
+## Session 2 continued
+- Scroll Highlights: About paragraphs get line-by-line rose-gold (#E3B695) highlight via background-clip:text gradient + rAF scroll progress (--p custom property). Reduced-motion safe.
+- BUG FIX: blurry OPERATIONS hero image replaced with real vector text — Italiana font, clamp(3.4rem, 11vw, 10.5rem), wordmark PNG deleted, preload removed. Verified by testing_agent (iteration_1.json, 100% pass desktop + mobile).
+- Netlify: user instructed to Save to GitHub (islndreamr/mywealthmedia) then import into Netlify; netlify.toml (publish=frontend/public, no build) confirmed correct.
