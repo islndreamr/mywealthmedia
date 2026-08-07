@@ -51,3 +51,10 @@ Single-page static marketing site for "My Wealth Media", the personal brand of M
 - Perf: hero.jpg 96KB, cards resized 820px 69-87KB each
 - Verified: testing_agent iteration_2.json — 100% pass, no regressions
 - NOTE: og meta assumes production domain mywealthmedia.com (from Megan's email). If final domain differs (e.g. *.netlify.app), update the 4 absolute URLs in index.html head.
+
+## Session 2 — Round 4
+- Hero font swapped to Cormorant 300 (closest free Google Font to paid Zaslia) — still pure HTML text, crisp
+- About feature line replaced with "San Diego based · Established 2024"
+- Custom on-brand 404 page (/404.html — Netlify serves it automatically from publish dir)
+- Testimonial rotates 3 quotes every 7.5s with 0.5s fade (Joseph Ortega named; other two anonymized roles — user can supply real names to swap in script.js quotes array)
+- Verified: testing_agent iteration_3.json — 100% pass
