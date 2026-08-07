@@ -13,7 +13,8 @@
   <meta property="og:site_name" content="My Wealth Media" />
   <meta property="og:title" content="Megan Lemay — Operations | My Wealth Media" />
   <meta property="og:description" content="Operations. I make companies run. Operations, sales infrastructure, and client delivery for founder-led companies. San Diego." />
-  <meta property="og:image" content="/assets/og-image.png" />
+  <meta property="og:url" content="https://mywealthmedia.com/" />
+  <meta property="og:image" content="https://mywealthmedia.com/assets/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
@@ -21,7 +22,9 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Megan Lemay — Operations | My Wealth Media" />
   <meta name="twitter:description" content="Operations. I make companies run. Operations, sales infrastructure, and client delivery for founder-led companies. San Diego." />
-  <meta name="twitter:image" content="/assets/og-image.png" />
+  <meta name="twitter:image" content="https://mywealthmedia.com/assets/og-image.png" />
+
+  <link rel="canonical" href="https://mywealthmedia.com/" />
 
   <!-- Favicons -->
   <link rel="icon" href="/assets/favicon.ico" sizes="any" />
@@ -38,15 +41,22 @@
   <link rel="preload" as="image" href="/assets/hero.jpg" fetchpriority="high" />
 
   <link rel="stylesheet" href="/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "My Wealth Media",
+    "founder": { "@type": "Person", "name": "Megan Lemay" },
+    "areaServed": "San Diego, California",
+    "email": "megan@mywealthmedia.com",
+    "url": "https://mywealthmedia.com/",
+    "sameAs": ["https://instagram.com/meganlemay.co"]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#about">Skip to content</a>
-
-  <!-- persistent brand mark, scrolls with the page -->
-  <div class="mark-fixed" aria-hidden="true">
-    <span class="mark-fallback"></span>
-    <img src="/assets/mwm-mark.png" alt="" loading="eager" width="48" height="48" />
-  </div>
 
   <main>
     <!-- ================= SECTION 1: HERO ================= -->
@@ -139,6 +149,19 @@
             </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIAL ================= -->
+    <section class="testimonial" aria-label="Client testimonial">
+      <div class="wrap-narrow">
+        <figure class="testimonial-inner reveal" data-testid="testimonial-quote">
+          <span class="testimonial-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote>
+            <p class="quote">Megan found the money we were losing and built the systems that stopped it.</p>
+          </blockquote>
+          <figcaption class="eyebrow testimonial-cite">Joseph Ortega&ensp;&middot;&ensp;CEO, 7FCC</figcaption>
+        </figure>
       </div>
     </section>
 

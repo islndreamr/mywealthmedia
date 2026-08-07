@@ -1,0 +1,27 @@
+{
+  "summary": "Frontend-only regression for My Wealth Media static site (iteration 2). Verified duplicate logo removal, new testimonial section, updated OG/Twitter/canonical meta + JSON-LD, image re-encoding integrity, and full regression on hero, layout, cursor, animations, and contact/footer. All 4 targeted changes and full regression checks PASSED.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "verified_checks": {
+    "single_logo": "PASS — .mark-fixed count=0; .hero-mark img count=1; only one mwm-mark.png in DOM",
+    "testimonial_section": "PASS — Section order is [hero, about, work, testimonial, contact]. Quote text and citation match spec. .reveal picks up .in-view when scrolled to.",
+    "meta_and_jsonld": "PASS — og:image and twitter:image = https://mywealthmedia.com/assets/og-image.png; og:url and link[rel=canonical] = https://mywealthmedia.com/; JSON-LD parses valid, @type=ProfessionalService, name=My Wealth Media",
+    "images": "PASS — hero.jpg (naturalWidth=1264), mwm-mark.png (256), icon-1/2/3.jpg (820) all load with naturalWidth>0 and complete=true; card photos render crisply",
+    "regression": "PASS — h1 'Operations' is text (no <img>, Italiana), no horizontal overflow at 1920x800 (scrollWidth=1920) or 390x844 (scrollWidth=390), body.has-cursor present with .cursor-dot and .cursor-ring, testimonial reveal animation triggers, mailto and Instagram links present, footer present"
+  },
+  "test_report_links": ["/app/test_reports/hero_desktop_v2.png"],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Note (not a bug): og:image points to https://mywealthmedia.com/assets/og-image.png — this domain will 404 until production deploy. Expected per review request; only tag content string was verified, not fetched."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (static site, skipped)", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Static site served from /app/frontend/public. All iteration_2 targeted changes verified. Testimonial figure has data-testid='testimonial-quote'. If deploying to production, verify og-image.png is actually reachable at https://mywealthmedia.com/assets/og-image.png (currently expected 404 in preview)."
+}
