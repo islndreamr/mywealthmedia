@@ -98,12 +98,8 @@
         cite: "Joseph Ortega\u2002\u00b7\u2002CEO, 7FCC"
       },
       {
-        text: "Our CRM finally tells the truth. So does our P&L.",
-        cite: "Founder\u2002\u00b7\u2002Online education company"
-      },
-      {
-        text: "She rebuilt our delivery while we were still selling. No client felt a thing.",
-        cite: "COO\u2002\u00b7\u2002High ticket coaching company"
+        text: "We're up 100 clients from auto-purchases in 30 days with the new system! Incredible!",
+        cite: "Alister Shirazi\u2002\u00b7\u2002A-List Media"
       }
     ];
     var qi = 0;

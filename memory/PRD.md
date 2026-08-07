@@ -58,3 +58,7 @@ Single-page static marketing site for "My Wealth Media", the personal brand of M
 - Custom on-brand 404 page (/404.html — Netlify serves it automatically from publish dir)
 - Testimonial rotates 3 quotes every 7.5s with 0.5s fade (Joseph Ortega named; other two anonymized roles — user can supply real names to swap in script.js quotes array)
 - Verified: testing_agent iteration_3.json — 100% pass
+
+## Session 2 — Round 5
+- Testimonial placeholders replaced with real quote: "We're up 100 clients from auto-purchases in 30 days with the new system! Incredible!" — Alister Shirazi · A-List Media
+- Rotation now cycles 2 authentic quotes (Ortega + Shirazi), verified live: full cycle observed via playwright (both quotes + loop back)
