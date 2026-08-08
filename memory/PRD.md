@@ -80,3 +80,9 @@ Single-page static marketing site for "My Wealth Media", the personal brand of M
 - Created /sitemap.xml (homepage) and /robots.txt (allow all + sitemap ref) — Netlify will serve both
 - Verified via curl (title, sitemap, robots, brand line x2) + hero screenshot
 - USER TODO: verify domain in Google Search Console, Request Indexing on homepage, submit sitemap.xml
+
+## Session 2 — Round 8: BUG FIX — giant kicker on production
+- Root cause: _headers cached style.css/script.js for 7 DAYS (max-age=604800) → users' browsers held old CSS (no .hero-kicker rule) with new HTML → kicker rendered in giant Cormorant
+- Fixes: _headers + netlify.toml now max-age=0 must-revalidate for HTML/CSS/JS; cache-busting ?v=8 on style.css/script.js links (index.html + 404.html); repaired accidental missing ld+json opening tag
+- Verified: testing_agent iteration_4.json 100% pass (kicker Jost 12px, JSON-LD valid, full regression)
+- IMPORTANT for future changes: bump ?v= number when changing style.css/script.js
