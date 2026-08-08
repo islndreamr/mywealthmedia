@@ -1,0 +1,39 @@
+{
+  "summary": "Frontend-only regression for static site cache-bust fix. Verified against preview URL https://megan-ops.preview.emergentagent.com with fresh browser context. MAIN BUG FIXED: hero kicker 'Business Operations & Scaling Consulting' now renders as small uppercase label (Jost 12px, letter-spacing 3.6px, color rgb(168,155,146)) above the large Cormorant 128px 'Authority at Scale.' display line. All secondary checks pass.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "verified_checks": {
+    "hero_kicker_computed": {"fontFamily": "Jost, system-ui, sans-serif", "fontSize": "12px", "letterSpacing": "3.6px", "textTransform": "uppercase", "color": "rgb(168, 155, 146)"},
+    "hero_title_computed": {"fontFamily": "Cormorant, Georgia, serif", "fontSize": "128px"},
+    "stylesheet_href": "/style.css?v=8 (loaded in document.styleSheets)",
+    "script_src": "/script.js?v=8",
+    "json_ld_valid": true,
+    "json_ld_name": "My Wealth Media",
+    "hero_cta_href": "#diagnostic (data-testid=hero-cta-button present)",
+    "body_classes": "has-cursor loaded",
+    "horizontal_overflow_desktop_1920": "0px",
+    "horizontal_overflow_mobile_390": "0px",
+    "page_title": "My Wealth Media | Business Operations & Scaling Consultant",
+    "meta_description_contains_hands_on": true,
+    "testimonial_rotation": "Rotated after ~9s from Joseph Ortega quote to Alister Shirazi's 'We're up 100 clients from auto-purchases in 30 days' quote",
+    "scroll_reveal_in_view": "4 elements gained .in-view after scroll",
+    "404_page_status": 200,
+    "404_renders_with_styles": true,
+    "sitemap_status": 200,
+    "sitemap_contains_mywealthmedia": true,
+    "robots_txt_sitemap_line": "Sitemap: https://mywealthmedia.com/sitemap.xml present"
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (static site)", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Static single-page site under /app/frontend/public. Cache-busting via ?v=8 on style.css and script.js. _headers configured max-age=0 for HTML/CSS/JS and immutable for /assets/*. Hero kicker is a span.hero-kicker inside h1.hero-title; kicker CSS rule at style.css line 202. Preview URL: https://megan-ops.preview.emergentagent.com. All 4 iterations have passed."
+}
