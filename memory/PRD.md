@@ -71,3 +71,12 @@ Single-page static marketing site for "My Wealth Media", the personal brand of M
 - Hero overlay changed from left-weighted to symmetric center radial for centered text legibility
 - Removed "San Diego" location line from hero (still in About feature line)
 - Verified via desktop 1920 + mobile 390 screenshots
+
+## Session 2 — Round 7: Entity SEO
+- Title: "My Wealth Media | Business Operations & Scaling Consultant"; meta/og/twitter descriptions per SEO consultant copy
+- H1 now contains visible kicker "Business Operations & Scaling Consulting" + display line "Authority at Scale."
+- About opens with "My Wealth Media is a business operations and scaling consultancy based in San Diego, run by me, Megan Lemay."
+- JSON-LD enriched: description, founder jobTitle, knowsAbout array
+- Created /sitemap.xml (homepage) and /robots.txt (allow all + sitemap ref) — Netlify will serve both
+- Verified via curl (title, sitemap, robots, brand line x2) + hero screenshot
+- USER TODO: verify domain in Google Search Console, Request Indexing on homepage, submit sitemap.xml

@@ -199,6 +199,18 @@ button:focus-visible {
 
 .eyebrow--accent.eyebrow { margin-bottom: 44px; }
 
+.hero-kicker {
+  display: block;
+  font-family: var(--font-label);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) { .hero-kicker { font-size: 12px; } }
+
 .hero-title {
   font-family: 'Cormorant', Georgia, serif;
   font-weight: 300;
