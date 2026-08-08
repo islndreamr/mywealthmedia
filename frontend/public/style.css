@@ -174,17 +174,18 @@ button:focus-visible {
   inset: 0;
   z-index: 2;
   background:
-    linear-gradient(to top, rgba(20, 17, 16, 0.92) 0%, rgba(20, 17, 16, 0) 34%),
-    linear-gradient(90deg, rgba(20, 17, 16, 0.88) 0%, rgba(20, 17, 16, 0.45) 100%);
+    linear-gradient(to top, rgba(20, 17, 16, 0.92) 0%, rgba(20, 17, 16, 0) 36%),
+    radial-gradient(130% 120% at 50% 44%, rgba(20, 17, 16, 0.84) 0%, rgba(20, 17, 16, 0.55) 58%, rgba(20, 17, 16, 0.38) 100%);
 }
 
 .hero-content {
   position: relative;
   z-index: 3;
   width: 100%;
-  max-width: 1240px;
+  max-width: 1080px;
   margin-inline: auto;
   padding: 0 24px;
+  text-align: center;
 }
 
 .hero-mark {
@@ -193,20 +194,19 @@ button:focus-visible {
   height: 96px;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 34px;
+  margin: 0 auto 68px;
 }
 
-.eyebrow--accent.eyebrow { margin-bottom: 22px; }
+.eyebrow--accent.eyebrow { margin-bottom: 44px; }
 
 .hero-title {
   font-family: 'Cormorant', Georgia, serif;
   font-weight: 300;
   color: var(--cream);
-  text-transform: uppercase;
-  font-size: clamp(3.6rem, 11.5vw, 11rem);
-  letter-spacing: 0.02em;
-  line-height: 0.9;
-  margin: 0 0 26px;
+  font-size: clamp(3.4rem, 8.5vw, 8rem);
+  letter-spacing: 0.01em;
+  line-height: 1.04;
+  margin: 0 0 52px;
 }
 .mask {
   display: inline-block;
@@ -217,16 +217,16 @@ button:focus-visible {
 .mask-inner { display: inline-block; }
 
 .hero-sub {
+  font-family: var(--font-body);
   color: var(--cream);
   font-weight: 300;
-  font-size: clamp(1.25rem, 3vw, 1.625rem);
-  line-height: 1.4;
-  margin: 0 0 26px;
+  font-size: clamp(1.1rem, 2.4vw, 1.375rem);
+  line-height: 1.6;
+  max-width: 30em;
+  margin: 0 auto 64px;
 }
-.hero-loc {
-  color: var(--muted);
-  margin-bottom: 40px;
-}
+
+.btn-hero { letter-spacing: 0.02em; }
 
 .btn-ghost {
   display: inline-block;
@@ -645,8 +645,9 @@ button:focus-visible {
 /* ---------- Mobile hero centering ---------- */
 @media (max-width: 767px) {
   body { font-size: 17px; }
-  .hero { text-align: center; }
-  .hero-mark { margin-inline: auto; }
-  .hero-sub, .hero-loc { margin-inline: auto; }
+  .hero-mark { margin-bottom: 44px; }
+  .hero .eyebrow--accent { margin-bottom: 30px; }
+  .hero-title { margin-bottom: 36px; }
+  .hero-sub { margin-bottom: 44px; }
   .hero-content { padding-bottom: 90px; }
 }

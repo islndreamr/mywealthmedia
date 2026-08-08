@@ -62,3 +62,12 @@ Single-page static marketing site for "My Wealth Media", the personal brand of M
 ## Session 2 — Round 5
 - Testimonial placeholders replaced with real quote: "We're up 100 clients from auto-purchases in 30 days with the new system! Incredible!" — Alister Shirazi · A-List Media
 - Rotation now cycles 2 authentic quotes (Ortega + Shirazi), verified live: full cycle observed via playwright (both quotes + loop back)
+
+## Session 2 — Round 6: Hero redesign (Quiet Luxury minimalism)
+- Headline: "Authority at Scale." — Cormorant Light serif, title case, single line on desktop (clamp 3.4-8rem)
+- Subline: "Strategic systems and authentic growth for the modern founder." — Inter 300 sans
+- Fully centered composition, whitespace doubled (mark mb 68px, eyebrow mb 44px, title mb 52px, sub mb 64px)
+- CTA: solid rose-gold rectangle (btn-solid), no shadows/gradients; data-testid=hero-cta-button
+- Hero overlay changed from left-weighted to symmetric center radial for centered text legibility
+- Removed "San Diego" location line from hero (still in About feature line)
+- Verified via desktop 1920 + mobile 390 screenshots
