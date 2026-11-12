@@ -4,6 +4,10 @@ Nov 12, 2026. Nothing is deployed. Your live site is untouched.
 
 Preview link: https://deploy-preview-1--mywealthmedia.netlify.app (updates on its own every time I push).
 
+## Update, Nov 12: the TEAM guide is approved
+
+You sent the finished PDF, which counts as your approval, so the card stays live on Free Resources. I checked the card against the file: title, promise, the three points and the 10-minute read time all match. The PDF is stored in the repo at `site/guides/The-TEAM-Prompts.pdf`, outside the published folder, so nobody can download it from the site yet. When GoHighLevel is connected, it delivers the file by email.
+
 ## Update, Nov 12: placeholder interview
 
 Answers you gave, now applied: FAQ answers kept as written (tags off). Fourth client stays hidden. The $1M result stays unnamed. Button stays "Book the Diagnostic." Diagnostic page shows an email button until your calendar is built. Privacy: legal name confirmed, no address; GoHighLevel named as the CRM and email tool; no analytics today, Google Analytics may come later; unsubscribe by link or by email. Terms: governing-law line removed; paid work covered by a separate signed agreement; guide license line kept. Both legal pages dated November 12, 2026 and still marked as not lawyer-reviewed.

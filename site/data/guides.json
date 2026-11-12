@@ -14,6 +14,6 @@
     ],
     "featured": true,
     "approved": true,
-    "_notes": "Megan's rule (Nov 4): a guide appears only after she has seen and approved the real file. Set approved to true for each new guide once she has. The slug becomes the web address: /resources/<slug>/. Anything written in [BRACKETS] shows on the site as a marked placeholder. cover is a path like /assets/img/team-guide-cover.jpg. pdf is not linked anywhere yet; the CRM will deliver it."
+    "_notes": "Approved by Megan on Nov 12, 2026 (she sent the file). The PDF is kept at site/guides/The-TEAM-Prompts.pdf, outside the published folder, so it is not downloadable from the site. When GoHighLevel is connected, upload the PDF there and let the email deliver it; the pdf field stays empty on the site. The slug becomes the web address: /resources/<slug>/. Anything written in [BRACKETS] shows on the site as a marked placeholder."
   }
 ]
