@@ -1,0 +1,6 @@
+First Name,Last Name,Email,Phone,Company Name,Address,City,State,Postal Code,Country,Date of Birth,Source,Tags
+Alex,Rivera,alex.rivera@example.com,+15555550101,Rivera Consulting,123 Main St,Boise,ID,83702,US,1988-04-12,CSV Import Test,test-import;lead
+Jordan,Chen,jordan.chen@example.com,+15555550102,Chen Design Co,456 Oak Ave,Meridian,ID,83642,US,1992-09-30,CSV Import Test,test-import;client
+Taylor,Okafor,taylor.okafor@example.com,+15555550103,Okafor Realty,789 Pine Rd,Nampa,ID,83651,US,1979-01-22,CSV Import Test,test-import;lead
+Morgan,Patel,morgan.patel@example.com,+15555550104,Patel Fitness,321 Cedar Ln,Eagle,ID,83616,US,1995-07-08,CSV Import Test,test-import;prospect
+Casey,Nguyen,casey.nguyen@example.com,+15555550105,Nguyen Media,654 Birch Blvd,Caldwell,ID,83605,US,1984-11-15,CSV Import Test,test-import;client
