@@ -1,13 +1,17 @@
 [
   {
     "slug": "team-prompts-guide",
-    "title": "[TEAM GUIDE REAL TITLE]",
-    "promise": "[ONE-LINE PROMISE FROM THE GUIDE]",
+    "title": "The TEAM Prompts",
+    "promise": "Brief ChatGPT or Claude the way you'd brief a new hire, and hand off the messages that pull you back in after hours.",
     "topic": "AI Tools",
-    "readTime": "[x] min",
-    "cover": "",
+    "readTime": "10 min",
+    "cover": "/assets/img/team-guide-cover.jpg",
     "pdf": "",
-    "points": ["[POINT FROM THE PDF]", "[POINT FROM THE PDF]", "[POINT FROM THE PDF]"],
+    "points": [
+      "A 60-second check that shows which after-hours task to hand off first.",
+      "Six copy-paste prompts, starting with one that turns a voice memo into steps for your team.",
+      "How to save your brief once so you stop re-explaining your business."
+    ],
     "featured": true,
     "approved": true,
     "_notes": "Megan's rule (Nov 4): a guide appears only after she has seen and approved the real file. Set approved to true for each new guide once she has. The slug becomes the web address: /resources/<slug>/. Anything written in [BRACKETS] shows on the site as a marked placeholder. cover is a path like /assets/img/team-guide-cover.jpg. pdf is not linked anywhere yet; the CRM will deliver it."
