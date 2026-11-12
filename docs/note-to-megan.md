@@ -4,6 +4,10 @@ Nov 12, 2026. Nothing is deployed. Your live site is untouched.
 
 Preview link: https://deploy-preview-1--mywealthmedia.netlify.app (updates on its own every time I push).
 
+## Update, same day: font and headline
+
+Headline font is now Newsreader (your pick, option 5), light weight, with "keeps growing" in italic as the accent. Headline reads "Build the business that keeps growing when you step away." The font options page is gone. Gloock is out of the site entirely.
+
 ## Update, same day: the tightening pass
 
 You said the first cut felt loose with no path for the eye. Changes made:

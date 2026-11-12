@@ -66,7 +66,7 @@ function coverHtml(g, cls) {
 }
 
 /* ---- Simple pages ---- */
-const simple = ["index.html", "diagnostic.html", "privacy.html", "terms.html", "404.html", "font-options.html"];
+const simple = ["index.html", "diagnostic.html", "privacy.html", "terms.html", "404.html"];
 simple.forEach(name => {
   const p = readPage(name);
   const featured = guides.filter(g => g.approved && g.featured)[0] || guides.filter(g => g.approved)[0];
