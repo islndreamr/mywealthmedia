@@ -1,0 +1,33 @@
+<section class="section" aria-labelledby="guide-title">
+  <div class="wrap">
+    <div class="guide-hero">
+      {{COVER}}
+      <div>
+        <p class="eyebrow">Free guide</p>
+        <h1 id="guide-title" style="font-size:clamp(2.2rem,4.5vw,3.6rem)">{{TITLE}}</h1>
+        <p class="lede">{{PROMISE}}</p>
+        <p class="small"><span class="tag-pill">{{TOPIC}}</span> &nbsp; {{READTIME}} read</p>
+        <h2 style="font-size:1.4rem;margin-top:1.5rem">What's inside</h2>
+        <ul class="points">
+          {{POINTS}}
+        </ul>
+        <div class="optin">
+          <form data-lead-form="guide" data-guide="{{SLUG}}" novalidate>
+            <div class="form-row">
+              <div class="field"><label for="gp-first">First name</label><input class="input" id="gp-first" name="firstName" autocomplete="given-name" required></div>
+              <div class="field"><label for="gp-email">Email</label><input class="input" id="gp-email" name="email" type="email" autocomplete="email" required></div>
+            </div>
+            <p class="form-error" data-error hidden role="alert"></p>
+            <button class="btn btn-primary" type="submit">Send me the guide</button>
+            <p class="form-note">Check your inbox in the next few minutes.</p>
+          </form>
+          <div class="thanks" data-thanks hidden>
+            <h3>You're in.</h3>
+            <p>Your guide is on its way to <strong data-thanks-email></strong>. While you wait, want to see where your business is stuck? <a href="/#quiz">Take the 2-minute quiz.</a></p>
+          </div>
+        </div>
+        <p class="form-note" style="margin-top:1.5rem"><a href="/resources/">&larr; All free resources</a></p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,10 +1,10 @@
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
-/style.css
+/css/*
   Cache-Control: public, max-age=0, must-revalidate
 
-/script.js
+/js/*
   Cache-Control: public, max-age=0, must-revalidate
 
 /*

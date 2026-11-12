@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "team-prompts-guide",
+    "title": "[TEAM GUIDE REAL TITLE]",
+    "promise": "[ONE-LINE PROMISE FROM THE GUIDE]",
+    "topic": "AI Tools",
+    "readTime": "[x] min",
+    "cover": "",
+    "pdf": "",
+    "points": ["[POINT FROM THE PDF]", "[POINT FROM THE PDF]", "[POINT FROM THE PDF]"],
+    "featured": true,
+    "approved": true,
+    "_notes": "Megan's rule (Nov 4): a guide appears only after she has seen and approved the real file. Set approved to true for each new guide once she has. The slug becomes the web address: /resources/<slug>/. Anything written in [BRACKETS] shows on the site as a marked placeholder. cover is a path like /assets/img/team-guide-cover.jpg. pdf is not linked anywhere yet; the CRM will deliver it."
+  }
+]
