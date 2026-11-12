@@ -45,7 +45,7 @@ Copy I drafted in your voice (all draft, change anything):
 - Who I work with: "Service businesses where the owner is still the one holding it together. Usually [TEAM SIZE RANGE] on the team and [REVENUE RANGE] a year. Salons, agencies, trades, training companies. If you run it from your phone, you're in the right place."
 - FAQ, how soon: "The 30-day plan is written so the first changes land in the first week. Most owners feel the difference when the first thing they used to chase starts happening without them."
 
-Numbers I did not invent, still placeholders: the two client result figures, the fourth client, team size range, revenue range.
+Result-number placeholders on the two pull quotes were removed on Megan's say-so (Nov 12). Still placeholders: the fourth client, team size range, revenue range. The $1M in 8 months line also appears in the proof block under the story.
 
 ## Update, same day: photos and the de-templating pass
 
