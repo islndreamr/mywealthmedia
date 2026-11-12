@@ -2,6 +2,21 @@
 
 Nov 12, 2026. Nothing is deployed. Your live site is untouched.
 
+Preview link: https://deploy-preview-1--mywealthmedia.netlify.app (updates on its own every time I push).
+
+## Update, same day: the tightening pass
+
+You said the first cut felt loose with no path for the eye. Changes made:
+
+- A thin gold line runs down the left margin of the homepage with the big section numerals sitting on it, from the proof strip to the closing push. That is the path.
+- Every "why" sits next to a "do": Sound familiar beside the quiz card, the report contents beside a Book button, the FAQ beside a "Still deciding?" card that stays in view as you scroll.
+- Section heights roughly halved, text columns narrower, headline-to-body contrast stronger. The homepage is about a fifth shorter.
+- The closing push and footer are one dark band now instead of two in a row.
+- Hero: dead space and the "scroll" cue removed so the proof strip shows on a laptop screen without scrolling.
+- Client result cards lead with the result number (placeholder for now), the way proof cards should.
+
+Scores after the pass (Lighthouse, mobile): Homepage 99 performance, 95 accessibility. Resources 100 and 95. Diagnostic 100 and 100. The only accessibility flag anywhere is the gold numerals on cream (see decisions below).
+
 ## How to see it
 
 - Quickest: open the pictures in `docs/screenshots/`. There is a desktop and a phone shot of every page, plus the quiz mid-way and the quiz result.
@@ -28,7 +43,7 @@ Targets were Performance 90+ and Accessibility 95+.
 
 | Page | Performance | Accessibility |
 | --- | --- | --- |
-| Homepage | 99 | 100 |
+| Homepage | 99 | 95 (gold numerals, see below) |
 | Free Resources | 100 | 95 |
 | TEAM guide page | 99 | 98 |
 | Diagnostic | 99 | 98 |
