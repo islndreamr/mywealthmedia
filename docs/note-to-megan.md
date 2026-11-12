@@ -45,7 +45,7 @@ Copy I drafted in your voice (all draft, change anything):
 - Who I work with: "Service businesses where the owner is still the one holding it together. Usually [TEAM SIZE RANGE] on the team and [REVENUE RANGE] a year. Salons, agencies, trades, training companies. If you run it from your phone, you're in the right place."
 - FAQ, how soon: "The 30-day plan is written so the first changes land in the first week. Most owners feel the difference when the first thing they used to chase starts happening without them."
 
-Result-number placeholders on the two pull quotes were removed on Megan's say-so (Nov 12). Still placeholders: the fourth client, team size range, revenue range. The $1M in 8 months line also appears in the proof block under the story.
+Result-number placeholders on the two pull quotes were removed on Megan's say-so (Nov 12). Still a placeholder: the fourth client. "Who I work with" is now written from facts already on the page (the 48-person team, remote teams of about 70, the $1M in 8 months, the construction office) with no invented ranges; "from a few people" is the one soft phrase, change it if you want a number. The $1M in 8 months line also appears in the proof block under the story.
 
 ## Update, same day: photos and the de-templating pass
 
