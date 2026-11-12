@@ -17,7 +17,7 @@ Built from the text you sent (the "Build a business that doesn't depend on you t
 - Footer reads "Fractional COO and AI Systems Architect."
 
 Two choices I left to you:
-1. Headline. I kept "Build the business that keeps growing when you step away," which you chose this morning. Your new text opens with "Build a business that doesn't depend on you to run." Either works with the layout. Say which.
+1. Headline: switched to "Build a business that doesn't depend on you to run" on your say-so (Nov 12), with "depend on you" as the italic accent.
 2. Button wording. Your text says "Book a Business Diagnostic." The site says "Book the Diagnostic" everywhere, per the handoff. Say if you want it changed.
 
 The salon numerals (8 years, top 2%, dozens mentored, about 1,000 clients) stayed under the story, since your new text covers the same ground in prose.
