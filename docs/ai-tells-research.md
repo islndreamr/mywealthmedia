@@ -67,13 +67,13 @@ I went through the list against the preview as of today. "Brief" means the hando
 | Purple gradient, glass, glow | No | | Keep as is |
 | Cream background + serif display + warm accent | Yes, fully | Brand palette, Field Manual | Keep. This is the brand. The pink accent and the ink panels pull it away from the stock version of this look |
 | One italic word in the headline | Yes | Your pick, today | Your call. It is on the list, and it is also a classic editorial move. I would keep it because it is the only one on the page |
-| All-caps tracked eyebrow labels | Yes, nine of them | Mockups | Cut most. Keep the hero eyebrow and the START HERE tag. Drop "2-minute check," "Your score," "My story," "Still deciding?", "Free guide" on the band, "Legal," "The Diagnostic" |
+| All-caps tracked eyebrow labels | Yes, six on the homepage and five more across the other pages | Mockups | Cut most. Keep the hero eyebrow and the START HERE tag. Drop "2-minute check," "Your score," "My story," "Still deciding?", "Free guide" on the band, "Legal," "The Diagnostic" |
 | Big number, small label stat strip | Yes | Handoff | Keep the numbers, change the treatment. Write them into one sentence each, or set them as a line of running text with the numeral large inside it |
 | 01 / 02 / 03 markers | Yes, three places | Mockups, Field Manual rail | Keep on the rail, where sections really are a sequence. Remove from the three "Where to start" cards (not a sequence) and from the resources grid |
 | Fade-in on every section | Yes | My default | Remove. Keep one moment: the proof numerals counting up |
 | Hover lift on every button | Yes | My default | Remove the lift, keep a plain color change |
 | Identical rounded cards, one radius, one shadow | Mostly | My default | Vary. Flat cards with a single rule on light sections, no radius on the ink panels |
-| "→" on links | Yes, seven | Mockups | Remove all |
+| "→" on links | Yes, three on the homepage and one per card on the resources page | Mockups | Remove all |
 | "A · B · C" middle-dot strings | Yes, three | My default | Rewrite as sentences |
 | Hairline rules | Yes, many | Field Manual | Keep, but fewer. They are doing work in the FAQ and lists; cut them from the cards |
 | Three equal cards in a row | Yes, twice | Handoff | Keep the content, break the symmetry. Lead card wider than the other two, since you said most owners start there |
