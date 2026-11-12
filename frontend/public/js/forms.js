@@ -1,8 +1,8 @@
 /* My Wealth Media | forms.js
    ONE place every lead form on the site posts to.
 
-   TODO (Megan picks the CRM): replace the body of sendLead() with the real
-   submit. Until then nothing is sent anywhere. The form just shows its
+   TODO: Megan chose GoHighLevel (Nov 12). Replace the body of sendLead()
+   with the GoHighLevel submit (form webhook or API). Until then nothing is sent anywhere. The form just shows its
    thank-you state so the pages can be reviewed.
 
    Every form that uses this has:
@@ -15,7 +15,7 @@
 
   /* ---- The one swappable handler ---------------------------------- */
   function sendLead(lead) {
-    // TODO: connect the CRM here. Return a Promise that resolves on success.
+    // TODO: connect GoHighLevel here. Return a Promise that resolves on success.
     // Example shape of `lead`:
     // { kind: "guide", guide: "team-prompts-guide", firstName: "Sam",
     //   email: "sam@example.com", score: 17, page: "/resources/team-prompts-guide/" }

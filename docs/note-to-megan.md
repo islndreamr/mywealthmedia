@@ -4,6 +4,12 @@ Nov 12, 2026. Nothing is deployed. Your live site is untouched.
 
 Preview link: https://deploy-preview-1--mywealthmedia.netlify.app (updates on its own every time I push).
 
+## Update, Nov 12: placeholder interview
+
+Answers you gave, now applied: FAQ answers kept as written (tags off). Fourth client stays hidden. The $1M result stays unnamed. Button stays "Book the Diagnostic." Diagnostic page shows an email button until your calendar is built. Privacy: legal name confirmed, no address; GoHighLevel named as the CRM and email tool; no analytics today, Google Analytics may come later; unsubscribe by link or by email. Terms: governing-law line removed; paid work covered by a separate signed agreement; guide license line kept. Both legal pages dated November 12, 2026 and still marked as not lawyer-reviewed.
+
+Open: the calendar link (reminder set for later today), the guide fields from the other chat, the GoHighLevel connection for the forms, and a lawyer's pass on Privacy and Terms.
+
 ## Update, Nov 12: your copy is in
 
 Built from the text you sent (the "Build a business that doesn't depend on you to run" page). Where it went:
