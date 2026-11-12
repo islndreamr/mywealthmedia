@@ -61,7 +61,7 @@ function readPage(name) {
 function coverHtml(g, cls) {
   if (g.cover) return `<div class="cover ${cls || ""}"><img src="${esc(g.cover)}" alt="Cover of ${esc(g.title)}"></div>`;
   return `<div class="cover ${cls || ""}" aria-hidden="true">
-    <span class="mono">MWM</span><hr class="rule"><span class="tt">${mark(g.title)}</span><span class="ct">Free guide &middot; ${esc(g.topic)}</span>
+    <span class="mono">MWM</span><hr class="rule"><span class="tt">${mark(g.title)}</span><span class="ct">Free guide. ${esc(g.topic)}</span>
   </div>`;
 }
 
@@ -91,13 +91,12 @@ simple.forEach(name => {
   const others = shown.filter(g => g !== featured);
   const cards = shown.map((g, i) => `
       <article class="card res-card" data-topic="${esc(g.topic)}" data-search="${esc((g.title + " " + g.promise + " " + g.topic).toLowerCase())}">
-        <span class="num" aria-hidden="true">${String(i + 1).padStart(2, "0")}</span>
         <div class="body">
           <div class="thumb">${g.cover ? `<img src="${esc(g.cover)}" alt="">` : `<span>${mark(g.title)}</span>`}</div>
           <h3><a href="/resources/${g.slug}/" class="linkmore" style="text-decoration:none;color:inherit">${mark(g.title)}</a></h3>
           <span><span class="tag-pill">${esc(g.topic)}</span></span>
           <span class="meta">${mark(g.readTime)} read</span>
-          <a class="linkmore" href="/resources/${g.slug}/">Get the guide <span aria-hidden="true">&rarr;</span></a>
+          <a class="linkmore" href="/resources/${g.slug}/">Get the guide</a>
         </div>
       </article>`).join("\n");
   const featuredHtml = featured ? `

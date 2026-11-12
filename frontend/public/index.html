@@ -19,7 +19,7 @@
   <link rel="apple-touch-icon" href="/assets/favicon-180.png">
   <link rel="preload" href="/assets/fonts/newsreader-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/hanken-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/site.css?v=7874368">
+  <link rel="stylesheet" href="/css/site.css?v=9993682">
   
 </head>
 <body class="home">
@@ -89,10 +89,13 @@
         <div class="hero-panel">
           <span class="panel-mono">MWM</span>
           <span class="panel-big">01</span>
-          <span class="panel-cap">Megan Lemay &middot; San Diego</span>
+          <span class="panel-cap">Megan Lemay, San Diego</span>
         </div>
         <figure class="portrait">
-          <span class="ph"><span class="ph">[PHOTO OF MEGAN, coming]</span></span>
+          <picture>
+            <source srcset="/assets/img/megan-hero.webp" type="image/webp">
+            <img src="/assets/img/megan-hero.jpg" width="900" height="1125" alt="Megan Lemay" fetchpriority="high">
+          </picture>
         </figure>
       </div>
     </div>
@@ -101,11 +104,11 @@
 
 <section class="sec esp proof" aria-label="Background">
   <div class="wrap">
-    <ul class="proof-grid">
-      <li class="proof-item"><span class="num" data-count="8">8</span><span class="lab">years at a luxury salon</span></li>
-      <li class="proof-item"><span class="num" data-count="2" data-prefix="Top " data-suffix="%">Top 2%</span><span class="lab">of stylists for revenue in the Pacific Northwest</span></li>
-      <li class="proof-item"><span class="num">Dozens</span><span class="lab">of stylists mentored</span></li>
-      <li class="proof-item"><span class="num" data-count="1000" data-prefix="~">~1,000</span><span class="lab">clients across salons and businesses</span></li>
+    <ul class="proof-lines">
+      <li><span class="num" data-count="8">8</span> years at a luxury salon.</li>
+      <li><span class="num" data-count="2" data-prefix="Top " data-suffix="%">Top 2%</span> of stylists for revenue in the Pacific Northwest.</li>
+      <li><span class="num">Dozens</span> of stylists mentored.</li>
+      <li><span class="num" data-count="1000" data-prefix="~">~1,000</span> clients across salons and businesses.</li>
     </ul>
   </div>
 </section>
@@ -117,7 +120,7 @@
     <div class="content split">
       <div>
         <h2 id="familiar-title">Sound familiar?</h2>
-        <ul class="familiar-list reveal">
+        <ul class="familiar-list">
           <li>Every decision still runs through you.</li>
           <li>Your team waits on you before they move.</li>
           <li>You know AI could save you hours, but you haven't had time to set it up.</li>
@@ -125,17 +128,15 @@
         </ul>
       </div>
       <div class="side">
-        <div class="quiz reveal" id="quiz">
+        <div class="quiz" id="quiz">
           <div class="quiz-intro">
-            <p class="eyebrow">2-minute check</p>
             <h3>How much is your business running on you?</h3>
             <p>9 quick questions, about 2 minutes. See your score right away.</p>
             <button class="btn btn-primary btn-block" type="button" data-quiz-start>Take the quiz</button>
           </div>
           <form class="quiz-form" hidden novalidate aria-label="Quiz"></form>
           <div class="quiz-result" aria-live="polite">
-            <p class="eyebrow">Your score</p>
-            <div class="quiz-score"><span class="num" data-score>0</span><span class="of">out of 27</span></div>
+            <div class="quiz-score"><span class="num" data-score>0</span><span class="of">out of 27. Your score.</span></div>
             <h3 class="quiz-band" data-band-title></h3>
             <p data-band-body></p>
             <a class="btn btn-primary btn-block" href="/diagnostic/">Book the Diagnostic</a>
@@ -169,28 +170,25 @@
         <h2 id="where-title">Where to start</h2>
         <p class="lede">Three ways in. Most owners start with the first one.</p>
       </div>
-      <div class="grid grid-3">
-        <article class="card reveal">
-          <span class="num" aria-hidden="true">01</span>
+      <div class="grid grid-lead">
+        <article class="card lead">
           <h3>The Diagnostic</h3>
           <p><span class="start">Start here if you know something's off but can't put your finger on it.</span> A free 30-minute call, then an optional written report.</p>
-          <a class="card-link" href="/diagnostic/">Book the Diagnostic <span aria-hidden="true">&rarr;</span></a>
+          <a class="card-link" href="/diagnostic/">Book the Diagnostic</a>
         </article>
-        <article class="card reveal">
-          <span class="num" aria-hidden="true">02</span>
+        <article class="card">
           <h3>Operations</h3>
           <p><span class="start">Start here if the work only gets done when you push it.</span> We build the systems and team structure so it runs without you.</p>
-          <a class="card-link" href="/diagnostic/">Start with a call <span aria-hidden="true">&rarr;</span></a>
+          <a class="card-link" href="/diagnostic/">Start with a call</a>
         </article>
-        <article class="card reveal">
-          <span class="num" aria-hidden="true">03</span>
+        <article class="card">
           <h3>Sales and Delivery</h3>
           <p><span class="start">Start here if leads come in but follow-through is messy.</span> We tighten the path from first call to happy client.</p>
-          <a class="card-link" href="/diagnostic/">Start with a call <span aria-hidden="true">&rarr;</span></a>
+          <a class="card-link" href="/diagnostic/">Start with a call</a>
         </article>
       </div>
 
-      <div class="split report reveal">
+      <div class="split report">
         <div>
           <h3>What's in the Diagnostic report</h3>
           <p class="lede">The call is free. The report is optional, and it's the part people keep.</p>
@@ -217,17 +215,17 @@
         <p class="lede">Real clients. Names kept private.</p>
       </div>
       <div class="grid grid-3">
-        <article class="card result reveal">
+        <article class="card result">
           <p class="metric"><span class="ph"><span class="ph">[RESULT NUMBER NEEDED]</span></span></p>
           <p class="who">Founder, Meta ads agency</p>
           <p>We moved the campaign build ahead of the kickoff call, so clients see their ads on day one of working together. Every service tier now has a written client journey and SOPs, and the founder is stepping out of client calls.</p>
         </article>
-        <article class="card result reveal">
+        <article class="card result">
           <p class="metric"><span class="ph"><span class="ph">[RESULT NUMBER NEEDED]</span></span></p>
           <p class="who">CEO, online sales training company</p>
           <p>I built the company's backend from the ground up: the CRM, the lead pipeline and the processes behind it. That included moving about 20,000 leads and 48 team members into one system.</p>
         </article>
-        <article class="card result reveal">
+        <article class="card result">
           <p class="metric"><span class="ph"><span class="ph">[RESULT NUMBER NEEDED]</span></span></p>
           <p class="who">Owner, construction company</p>
           <p>I run the office side so the owner can stay on the job site: subcontractor agreements, the CRM and an AI assistant that turns his messages into tasks.</p>
@@ -241,10 +239,15 @@
         -->
       </div>
 
-      <div class="story reveal">
-        <div class="photo ph-block"><span><span class="ph">[WORKING PHOTO OF MEGAN, coming]</span></span></div>
+      <div class="story">
+        <div class="photo">
+          <picture>
+            <source srcset="/assets/img/megan-story.webp" type="image/webp">
+            <img src="/assets/img/megan-story.jpg" width="800" height="1000" alt="Megan Lemay seated on a sofa, looking to the side" loading="lazy">
+          </picture>
+        </div>
         <blockquote>
-          <p class="eyebrow">My story</p>
+          <h3 class="story-h">My story</h3>
           <p>I spent eight years at a luxury salon. Every week and every month I had numbers to hit, and I tracked all of it. By the end, my revenue put me in the top 2% of stylists in the Pacific Northwest.</p>
           <p>Somewhere in there I started teaching. I've mentored dozens of young stylists and spoken on stage, and I've won multiple awards for my work.</p>
           <p>Running my chair like a business is what got me into operations. Now I do it for other owners as a fractional COO. I find where things are stuck, then set up the systems and AI tools that keep the work moving without you watching every step.</p>
@@ -264,7 +267,7 @@
         <h2 id="how-title">How it works</h2>
         <a class="btn btn-primary" href="/diagnostic/">Book the Diagnostic</a>
       </div>
-      <ol class="steps reveal">
+      <ol class="steps">
         <li><h3>Talk.</h3><p>A free 30-minute call about what's going on in your business.</p></li>
         <li><h3>Get the plan.</h3><p>If you want it, I write up the audit and your 30-day plan.</p></li>
         <li><h3>Build it.</h3><p>We set up the systems and tools together, and you keep everything.</p></li>
@@ -277,10 +280,10 @@
   <div class="wrap">
     <div class="guide-feature">
       <div class="cover " aria-hidden="true">
-    <span class="mono">MWM</span><hr class="rule"><span class="tt"><span class="ph">[TEAM GUIDE REAL TITLE]</span></span><span class="ct">Free guide &middot; AI Tools</span>
+    <span class="mono">MWM</span><hr class="rule"><span class="tt"><span class="ph">[TEAM GUIDE REAL TITLE]</span></span><span class="ct">Free guide. AI Tools</span>
   </div>
       <div>
-        <p class="eyebrow">Free guide</p>
+        <p class="kicker">Free guide</p>
         <h2 id="guide-title"><span class="ph">[TEAM GUIDE REAL TITLE]</span></h2>
         <p class="lede"><span class="ph">[ONE-LINE PROMISE FROM THE GUIDE]</span></p>
         <ul class="points">
@@ -311,7 +314,7 @@
     <div class="content split">
       <div>
         <h2 id="faq-title">Questions</h2>
-        <div class="faq reveal">
+        <div class="faq">
           <details>
             <summary>Is the Diagnostic a sales call?</summary>
             <p class="ans">It's 30 minutes to figure out where your business is stuck. If the written report would help, I'll tell you about it on the call. If it wouldn't, you still leave knowing what to fix first.</p>
@@ -339,9 +342,8 @@
         </div>
       </div>
       <div class="side">
-        <div class="decide card reveal">
-          <p class="eyebrow">Still deciding?</p>
-          <h3>Start with the free call.</h3>
+        <div class="decide card">
+          <h3>Still deciding? Start with the free call.</h3>
           <p>30 minutes. No prep. You leave knowing what to fix first, whether or not we work together.</p>
           <a class="btn btn-primary btn-block" href="/diagnostic/">Book the Diagnostic</a>
           <p class="small" style="margin:.75rem 0 0;text-align:center">Or <a href="/resources/team-prompts-guide/">get the free guide</a> first.</p>
@@ -365,7 +367,7 @@
     <div class="footer-grid">
       <div>
         <span class="mono">MWM</span>
-        <span class="tag">My Wealth Media LLC &middot; San Diego based</span>
+        <span class="tag">My Wealth Media LLC, San Diego</span>
         <span class="tag">Fractional COO for service businesses</span>
       </div>
       <div>
@@ -398,7 +400,7 @@
   <a class="btn btn-primary" href="/diagnostic/">Book the Diagnostic</a>
 </div>
 
-<script src="/js/site.js?v=7874368" defer></script>
-<script src="/js/forms.js?v=7874368" defer></script><script src="/js/quiz.js?v=7874368" defer></script>
+<script src="/js/site.js?v=9993682" defer></script>
+<script src="/js/forms.js?v=9993682" defer></script><script src="/js/quiz.js?v=9993682" defer></script>
 </body>
 </html>

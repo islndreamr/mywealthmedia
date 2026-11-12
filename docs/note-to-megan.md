@@ -4,6 +4,12 @@ Nov 12, 2026. Nothing is deployed. Your live site is untouched.
 
 Preview link: https://deploy-preview-1--mywealthmedia.netlify.app (updates on its own every time I push).
 
+## Update, same day: photos and the de-templating pass
+
+- Photos are in. Photo 2 (direct gaze) in the hero arch, photo 3 (looking away) in the story section, photo 1 on the share image. All three originals are saved in `frontend/public/assets/img/` at web size.
+- From the AI-tells list: eyebrow labels cut to two (hero and START HERE), arrows off every link, fade-ins and hover lifts removed, proof strip rewritten as sentences with the numeral large inside each, the Diagnostic card made wider and cream so it reads as the first choice, 01/02/03 removed from the cards and the resources grid, middle-dot strings rewritten, rail and footer labels in sentence case.
+- Still open from that list: the three client result numbers (item 2), and one line of your own opinion per section (item 8).
+
 ## Update, same day: font and headline
 
 Headline font is now Newsreader (your pick, option 5), light weight, with "keeps growing" in italic as the accent. Headline reads "Build the business that keeps growing when you step away." The font options page is gone. Gloock is out of the site entirely.
@@ -59,7 +65,7 @@ Checked by script at 375, 768 and 1440 wide: no sideways scroll on any page, no 
 
 ## Placeholders still open (every one is visibly marked on the page)
 
-1. Portrait photo in the hero, and the working photo in your story.
+1. Done: portrait and story photos are in.
 2. Result numbers on the three client cards.
 3. The fourth client: role, industry and result. The card is in the code, hidden, ready for it.
 4. TEAM guide: real title, one-line promise, cover image, three points from the PDF, read time.
