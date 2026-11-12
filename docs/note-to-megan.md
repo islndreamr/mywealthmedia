@@ -4,6 +4,31 @@ Nov 12, 2026. Nothing is deployed. Your live site is untouched.
 
 Preview link: https://deploy-preview-1--mywealthmedia.netlify.app (updates on its own every time I push).
 
+## Update, Nov 12 evening: the research pass (groups A to D)
+
+Built from the three-tier research in `docs/design-research-3-tiers.md`.
+
+- Hero: one headline at about 7 percent of the screen width, your photo full height running off the right edge, one pink button, the guide as a text link, one proof sentence. The subline moved to an italic standfirst under the hero.
+- The second block on the page is now a real result: 20,000 leads and 48 team members moved into one system (from your own copy for the sales training company). The other two results follow as pull quotes with their number placeholders.
+- Services and results are out of boxes. The Diagnostic column is wider than the other two.
+- Pink appears once per screen. Other buttons are outlined ink.
+- Type scale cut to four sizes plus one label size.
+- Rail is five words with no numerals: Start, Results, Services, How it works, Questions. The numerals now live only in "How it works," where 1, 2, 3 is a real sequence.
+- Your story is the one full-width module, with the salon proof lines inside it.
+- A booking block before the free guide, and a "Who I work with" block after the results.
+
+Copy I drafted in your voice (all draft, change anything):
+- Hero proof line: "8 years running my own book. Top 2% of stylists in the Pacific Northwest for revenue. Now I build the part of your business that runs without you."
+- Under results: "Every result on this page is a real client. Names stay private because their numbers are their business."
+- Under Sound familiar: "Most of this is a structure problem. The business was built around you, and the part that runs without you was never built."
+- Under services: "I build it inside your business, with you, and you keep all of it."
+- Under How it works: "Most owners wait until they're exhausted to fix this. The fix is faster when you still have some energy for it."
+- Booking block: "30 minutes, with me. No pitch and no prep. You leave with clear next steps, whether we work together or not." and "If the Diagnostic is the wrong fit for you, I'll say so on the call."
+- Who I work with: "Service businesses where the owner is still the one holding it together. Usually [TEAM SIZE RANGE] on the team and [REVENUE RANGE] a year. Salons, agencies, trades, training companies. If you run it from your phone, you're in the right place."
+- FAQ, how soon: "The 30-day plan is written so the first changes land in the first week. Most owners feel the difference when the first thing they used to chase starts happening without them."
+
+Numbers I did not invent, still placeholders: the two client result figures, the fourth client, team size range, revenue range.
+
 ## Update, same day: photos and the de-templating pass
 
 - Photos are in. Photo 2 (direct gaze) in the hero arch, photo 3 (looking away) in the story section, photo 1 on the share image. All three originals are saved in `frontend/public/assets/img/` at web size.

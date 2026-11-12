@@ -5,39 +5,171 @@ out: index.html
 bodyClass: home
 scripts: <script src="/js/forms.js?v={{V}}" defer></script><script src="/js/quiz.js?v={{V}}" defer></script>
 ---
-<!-- 01 START: hero + proof strip -->
-<section class="hero" id="start" data-nav-section="start" aria-labelledby="hero-title">
+<!-- HERO: one idea, one big headline, one button, the photo runs off the right edge -->
+<section class="hero2" id="start" data-nav-section="start" aria-labelledby="hero-title">
+  <div class="hero2-photo" aria-hidden="true">
+    <picture>
+      <source srcset="/assets/img/megan-hero-tall.webp" type="image/webp">
+      <img src="/assets/img/megan-hero-tall.jpg" width="1000" height="1500" alt="" fetchpriority="high">
+    </picture>
+  </div>
+  <div class="wrap hero2-wrap">
+    <h1 id="hero-title">Build the business that <em>keeps growing</em> when you step away.</h1>
+    <div class="hero2-actions">
+      <a class="btn btn-primary btn-lg" href="/diagnostic/">Book the Diagnostic</a>
+      <a class="textlink" href="/resources/{{GUIDE_SLUG}}/">Get the free guide</a>
+    </div>
+    <p class="hero2-proof">8 years running my own book. Top 2% of stylists in the Pacific Northwest for revenue. Now I build the part of your business that runs without you.</p>
+  </div>
+</section>
+
+<section class="sec standfirst" aria-label="What I do">
   <div class="wrap">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">Fractional COO for service businesses</p>
-        <h1 id="hero-title">Build the business that <em>keeps growing</em> when you step away.</h1>
-        <p class="lede">I help service business owners put systems and AI tools in place, so the day-to-day keeps moving without you holding it all together.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary btn-lg" href="/diagnostic/">Book the Diagnostic</a>
-          <a class="linkmore" href="/resources/{{GUIDE_SLUG}}/">Get the free guide</a>
+    <p class="stand">I help service business owners put systems and AI tools in place, so the day-to-day keeps moving without you holding it all together.</p>
+    <p class="small">Fractional COO for service businesses. Free 30-minute call to start. If you want to go deeper, I write you a full report.</p>
+  </div>
+</section>
+
+<!-- PROOF FIRST: the one real number we already have, as the second block on the page -->
+<section class="sec dark proof2" id="results" data-nav-section="results" aria-labelledby="proof-title">
+  <div class="wrap">
+    <h2 id="proof-title" class="sr-only">Client results</h2>
+    <p class="giant"><span class="num">20,000</span> leads and 48 team members, moved into one system.</p>
+    <p class="giant-sub">I built the company's backend from the ground up: the CRM, the lead pipeline and the processes behind it.</p>
+    <p class="who">CEO, online sales training company</p>
+    <p class="opinion">Every result on this page is a real client. Names stay private because their numbers are their business.</p>
+  </div>
+</section>
+
+<!-- SOUND FAMILIAR + quiz -->
+<section class="sec" id="familiar" data-nav-section="familiar" aria-labelledby="familiar-title">
+  <div class="wrap split-wide">
+    <div>
+      <h2 id="familiar-title">Sound familiar?</h2>
+      <ul class="familiar-list">
+        <li>Every decision still runs through you.</li>
+        <li>Your team waits on you before they move.</li>
+        <li>You know AI could save you hours, but you haven't had time to set it up.</li>
+        <li>You can't take a day off without checking your phone.</li>
+      </ul>
+      <p class="opinion">Most of this is a structure problem. The business was built around you, and the part that runs without you was never built.</p>
+    </div>
+    <div class="side">
+      <div class="quiz" id="quiz">
+        <div class="quiz-intro">
+          <h3>How much is your business running on you?</h3>
+          <p>9 quick questions, about 2 minutes. See your score right away.</p>
+          <button class="btn btn-outline btn-block" type="button" data-quiz-start>Take the quiz</button>
         </div>
-        <p class="hero-under">Free 30-minute call. If you want to go deeper, I'll write you a full report.</p>
-      </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="hero-panel">
-          <span class="panel-mono">MWM</span>
-          <span class="panel-big">01</span>
-          <span class="panel-cap">Megan Lemay, San Diego</span>
+        <form class="quiz-form" hidden novalidate aria-label="Quiz"></form>
+        <div class="quiz-result" aria-live="polite">
+          <div class="quiz-score"><span class="num" data-score>0</span><span class="of">out of 27. Your score.</span></div>
+          <h3 class="quiz-band" data-band-title></h3>
+          <p data-band-body></p>
+          <a class="btn btn-primary btn-block" href="/diagnostic/">Book the Diagnostic</a>
+          <div class="quiz-email">
+            <form data-lead-form="quiz" novalidate>
+              <p><strong>Want the full breakdown?</strong> I'll send you what each answer means and what to fix first.</p>
+              <div class="field"><label for="quiz-first">First name</label><input class="input" id="quiz-first" name="firstName" autocomplete="given-name" required></div>
+              <div class="field"><label for="quiz-email">Email</label><input class="input" id="quiz-email" name="email" type="email" autocomplete="email" required></div>
+              <p class="form-error" data-error hidden role="alert"></p>
+              <button class="btn btn-outline btn-block" type="submit">Send me the breakdown</button>
+            </form>
+            <div class="thanks" data-thanks hidden>
+              <h3>You're in.</h3>
+              <p>Your breakdown is on its way to <strong data-thanks-email></strong>.</p>
+            </div>
+            <p class="small" style="margin:1rem 0 0"><button type="button" class="linkbtn" data-quiz-again>Take it again</button></p>
+          </div>
         </div>
-        <figure class="portrait">
-          <picture>
-            <source srcset="/assets/img/megan-hero.webp" type="image/webp">
-            <img src="/assets/img/megan-hero.jpg" width="900" height="1125" alt="Megan Lemay" fetchpriority="high">
-          </picture>
-        </figure>
       </div>
     </div>
   </div>
 </section>
 
-<section class="sec esp proof" aria-label="Background">
+<!-- WHERE TO START: three unequal text columns, no boxes -->
+<section class="sec paper" id="where" data-nav-section="where" aria-labelledby="where-title">
   <div class="wrap">
+    <div class="section-head">
+      <h2 id="where-title">Where to start</h2>
+      <p class="lede">Three ways in. Most owners start with the first one.</p>
+    </div>
+    <div class="services">
+      <div class="service lead">
+        <h3>The Diagnostic</h3>
+        <p><strong>Start here if you know something's off but can't put your finger on it.</strong> A free 30-minute call, then an optional written report.</p>
+        <a class="textlink" href="/diagnostic/">Book the Diagnostic</a>
+      </div>
+      <div class="service">
+        <h3>Operations</h3>
+        <p><strong>Start here if the work only gets done when you push it.</strong> We build the systems and team structure so it runs without you.</p>
+        <a class="textlink" href="/diagnostic/">Start with a call</a>
+      </div>
+      <div class="service">
+        <h3>Sales and Delivery</h3>
+        <p><strong>Start here if leads come in but follow-through is messy.</strong> We tighten the path from first call to happy client.</p>
+        <a class="textlink" href="/diagnostic/">Start with a call</a>
+      </div>
+    </div>
+    <p class="opinion">I build it inside your business, with you, and you keep all of it.</p>
+
+    <div class="report2">
+      <div>
+        <h3>What's in the Diagnostic report</h3>
+        <p class="lede">The call is free. The report is optional, and it's the part people keep.</p>
+        <a class="btn btn-primary" href="/diagnostic/">Book the Diagnostic</a>
+      </div>
+      <ul class="check">
+        <li>A written audit of how your business runs today and where it gets stuck</li>
+        <li>A 30-day action plan, in order</li>
+        <li>A short list of AI tools to set up, and what each one is for</li>
+        <li>A straight answer on whether ongoing 1:1 support makes sense for you, and what that would look like</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- MORE RESULTS as pull quotes, and who I work with -->
+<section class="sec" aria-labelledby="more-results">
+  <div class="wrap">
+    <h2 id="more-results">More results</h2>
+    <div class="quotes">
+      <blockquote class="pull">
+        <p class="pull-num"><span class="ph">[RESULT NUMBER NEEDED]</span></p>
+        <p>We moved the campaign build ahead of the kickoff call, so clients see their ads on day one of working together. Every service tier now has a written client journey and SOPs, and the founder is stepping out of client calls.</p>
+        <footer>Founder, Meta ads agency</footer>
+      </blockquote>
+      <blockquote class="pull">
+        <p class="pull-num"><span class="ph">[RESULT NUMBER NEEDED]</span></p>
+        <p>I run the office side so the owner can stay on the job site: subcontractor agreements, the CRM and an AI assistant that turns his messages into tasks.</p>
+        <footer>Owner, construction company</footer>
+      </blockquote>
+      <!-- Fourth client, hidden until Megan supplies the role, industry and result.
+      <blockquote class="pull"><p class="pull-num">[RESULT NEEDED]</p><p></p><footer>[ROLE, INDUSTRY]</footer></blockquote>
+      -->
+    </div>
+
+    <div class="fit">
+      <h3>Who I work with</h3>
+      <p>Service businesses where the owner is still the one holding it together. Usually <span class="ph">[TEAM SIZE RANGE]</span> on the team and <span class="ph">[REVENUE RANGE]</span> a year. Salons, agencies, trades, training companies. If you run it from your phone, you're in the right place.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MY STORY: the one full-width, slow module -->
+<section class="sec dark story2" aria-labelledby="story-title">
+  <div class="story2-photo" aria-hidden="true">
+    <picture>
+      <source srcset="/assets/img/megan-story-sq.webp" type="image/webp">
+      <img src="/assets/img/megan-story-sq.jpg" width="900" height="900" alt="" loading="lazy">
+    </picture>
+  </div>
+  <div class="story2-text">
+    <h2 id="story-title">My story</h2>
+    <p>I spent eight years at a luxury salon. Every week and every month I had numbers to hit, and I tracked all of it. By the end, my revenue put me in the top 2% of stylists in the Pacific Northwest.</p>
+    <p>Somewhere in there I started teaching. I've mentored dozens of young stylists and spoken on stage, and I've won multiple awards for my work.</p>
+    <p>Running my chair like a business is what got me into operations. Now I do it for other owners as a fractional COO. I find where things are stuck, then set up the systems and AI tools that keep the work moving without you watching every step.</p>
+    <p class="sign">Megan Lemay</p>
     <ul class="proof-lines">
       <li><span class="num" data-count="8">8</span> years at a luxury salon.</li>
       <li><span class="num" data-count="2" data-prefix="Top " data-suffix="%">Top 2%</span> of stylists for revenue in the Pacific Northwest.</li>
@@ -47,169 +179,41 @@ scripts: <script src="/js/forms.js?v={{V}}" defer></script><script src="/js/quiz
   </div>
 </section>
 
-<!-- 02 SOUND FAMILIAR + quiz -->
-<section class="sec numbered" id="familiar" data-nav-section="familiar" aria-labelledby="familiar-title">
-  <div class="wrap cols">
-    <div class="marg"><span class="num" aria-hidden="true">02</span></div>
-    <div class="content split">
-      <div>
-        <h2 id="familiar-title">Sound familiar?</h2>
-        <ul class="familiar-list">
-          <li>Every decision still runs through you.</li>
-          <li>Your team waits on you before they move.</li>
-          <li>You know AI could save you hours, but you haven't had time to set it up.</li>
-          <li>You can't take a day off without checking your phone.</li>
-        </ul>
-      </div>
-      <div class="side">
-        <div class="quiz" id="quiz">
-          <div class="quiz-intro">
-            <h3>How much is your business running on you?</h3>
-            <p>9 quick questions, about 2 minutes. See your score right away.</p>
-            <button class="btn btn-primary btn-block" type="button" data-quiz-start>Take the quiz</button>
-          </div>
-          <form class="quiz-form" hidden novalidate aria-label="Quiz"></form>
-          <div class="quiz-result" aria-live="polite">
-            <div class="quiz-score"><span class="num" data-score>0</span><span class="of">out of 27. Your score.</span></div>
-            <h3 class="quiz-band" data-band-title></h3>
-            <p data-band-body></p>
-            <a class="btn btn-primary btn-block" href="/diagnostic/">Book the Diagnostic</a>
-            <div class="quiz-email">
-              <form data-lead-form="quiz" novalidate>
-                <p><strong>Want the full breakdown?</strong> I'll send you what each answer means and what to fix first.</p>
-                <div class="field"><label for="quiz-first">First name</label><input class="input" id="quiz-first" name="firstName" autocomplete="given-name" required></div>
-                <div class="field"><label for="quiz-email">Email</label><input class="input" id="quiz-email" name="email" type="email" autocomplete="email" required></div>
-                <p class="form-error" data-error hidden role="alert"></p>
-                <button class="btn btn-outline btn-block" type="submit">Send me the breakdown</button>
-              </form>
-              <div class="thanks" data-thanks hidden>
-                <h3>You're in.</h3>
-                <p>Your breakdown is on its way to <strong data-thanks-email></strong>.</p>
-              </div>
-              <p class="small" style="margin:1rem 0 0"><button type="button" class="linkbtn" data-quiz-again>Take it again</button></p>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- HOW IT WORKS: the numerals live here, because this is a real sequence -->
+<section class="sec paper" id="how" data-nav-section="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <h2 id="how-title">How it works</h2>
+    <ol class="steps2">
+      <li><span class="num" aria-hidden="true">1</span><div><h3>Talk.</h3><p>A free 30-minute call about what's going on in your business.</p></div></li>
+      <li><span class="num" aria-hidden="true">2</span><div><h3>Get the plan.</h3><p>If you want it, I write up the audit and your 30-day plan.</p></div></li>
+      <li><span class="num" aria-hidden="true">3</span><div><h3>Build it.</h3><p>We set up the systems and tools together, and you keep everything.</p></div></li>
+    </ol>
+    <p class="opinion">Most owners wait until they're exhausted to fix this. The fix is faster when you still have some energy for it.</p>
+  </div>
+</section>
+
+<!-- BOOKING BLOCK -->
+<section class="sec book" id="book" aria-labelledby="book-title">
+  <div class="wrap split-wide">
+    <div>
+      <h2 id="book-title">Start with the free call.</h2>
+      <p class="stand">30 minutes, with me. No pitch and no prep. You leave with clear next steps, whether we work together or not.</p>
+      <p>If the Diagnostic is the wrong fit for you, I'll say so on the call.</p>
+      <a class="btn btn-primary btn-lg" href="/diagnostic/">Book the Diagnostic</a>
+      <p class="small" style="margin-top:1rem">Not ready to talk? <a href="/resources/{{GUIDE_SLUG}}/">Get the free guide</a> first.</p>
+    </div>
+    <div class="side">
+      <ul class="check">
+        <li>Free, 30 minutes, on video</li>
+        <li>You talk, I ask questions</li>
+        <li>You leave knowing what to fix first</li>
+        <li>The written report is optional</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- 03 WHERE TO START + report contents -->
-<section class="sec dark numbered" id="where" data-nav-section="where" aria-labelledby="where-title">
-  <div class="wrap cols">
-    <div class="marg"><span class="num" aria-hidden="true">03</span></div>
-    <div class="content">
-      <div class="section-head">
-        <h2 id="where-title">Where to start</h2>
-        <p class="lede">Three ways in. Most owners start with the first one.</p>
-      </div>
-      <div class="grid grid-lead">
-        <article class="card lead">
-          <h3>The Diagnostic</h3>
-          <p><span class="start">Start here if you know something's off but can't put your finger on it.</span> A free 30-minute call, then an optional written report.</p>
-          <a class="card-link" href="/diagnostic/">Book the Diagnostic</a>
-        </article>
-        <article class="card">
-          <h3>Operations</h3>
-          <p><span class="start">Start here if the work only gets done when you push it.</span> We build the systems and team structure so it runs without you.</p>
-          <a class="card-link" href="/diagnostic/">Start with a call</a>
-        </article>
-        <article class="card">
-          <h3>Sales and Delivery</h3>
-          <p><span class="start">Start here if leads come in but follow-through is messy.</span> We tighten the path from first call to happy client.</p>
-          <a class="card-link" href="/diagnostic/">Start with a call</a>
-        </article>
-      </div>
-
-      <div class="split report">
-        <div>
-          <h3>What's in the Diagnostic report</h3>
-          <p class="lede">The call is free. The report is optional, and it's the part people keep.</p>
-          <a class="btn btn-primary" href="/diagnostic/">Book the Diagnostic</a>
-        </div>
-        <ul class="check">
-          <li>A written audit of how your business runs today and where it gets stuck</li>
-          <li>A 30-day action plan, in order</li>
-          <li>A short list of AI tools to set up, and what each one is for</li>
-          <li>A straight answer on whether ongoing 1:1 support makes sense for you, and what that would look like</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 04 RESULTS + story -->
-<section class="sec numbered" id="results" data-nav-section="results" aria-labelledby="results-title">
-  <div class="wrap cols">
-    <div class="marg"><span class="num" aria-hidden="true">04</span></div>
-    <div class="content">
-      <div class="section-head">
-        <h2 id="results-title">Client results</h2>
-        <p class="lede">Real clients. Names kept private.</p>
-      </div>
-      <div class="grid grid-3">
-        <article class="card result">
-          <p class="metric"><span class="ph">[RESULT NUMBER NEEDED]</span></p>
-          <p class="who">Founder, Meta ads agency</p>
-          <p>We moved the campaign build ahead of the kickoff call, so clients see their ads on day one of working together. Every service tier now has a written client journey and SOPs, and the founder is stepping out of client calls.</p>
-        </article>
-        <article class="card result">
-          <p class="metric"><span class="ph">[RESULT NUMBER NEEDED]</span></p>
-          <p class="who">CEO, online sales training company</p>
-          <p>I built the company's backend from the ground up: the CRM, the lead pipeline and the processes behind it. That included moving about 20,000 leads and 48 team members into one system.</p>
-        </article>
-        <article class="card result">
-          <p class="metric"><span class="ph">[RESULT NUMBER NEEDED]</span></p>
-          <p class="who">Owner, construction company</p>
-          <p>I run the office side so the owner can stay on the job site: subcontractor agreements, the CRM and an AI assistant that turns his messages into tasks.</p>
-        </article>
-        <!-- Fourth client card. Hidden until Megan supplies the role, industry and result.
-        <article class="card result">
-          <p class="metric">[RESULT NEEDED]</p>
-          <p class="who">[ROLE, INDUSTRY for the 4th client]</p>
-          <p></p>
-        </article>
-        -->
-      </div>
-
-      <div class="story">
-        <div class="photo">
-          <picture>
-            <source srcset="/assets/img/megan-story.webp" type="image/webp">
-            <img src="/assets/img/megan-story.jpg" width="800" height="1000" alt="Megan Lemay seated on a sofa, looking to the side" loading="lazy">
-          </picture>
-        </div>
-        <blockquote>
-          <h3 class="story-h">My story</h3>
-          <p>I spent eight years at a luxury salon. Every week and every month I had numbers to hit, and I tracked all of it. By the end, my revenue put me in the top 2% of stylists in the Pacific Northwest.</p>
-          <p>Somewhere in there I started teaching. I've mentored dozens of young stylists and spoken on stage, and I've won multiple awards for my work.</p>
-          <p>Running my chair like a business is what got me into operations. Now I do it for other owners as a fractional COO. I find where things are stuck, then set up the systems and AI tools that keep the work moving without you watching every step.</p>
-          <footer class="sign">Megan Lemay</footer>
-        </blockquote>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 05 HOW IT WORKS + free guide band -->
-<section class="sec paper numbered" id="how" data-nav-section="how" aria-labelledby="how-title">
-  <div class="wrap cols">
-    <div class="marg"><span class="num" aria-hidden="true">05</span></div>
-    <div class="content">
-      <div class="section-head row">
-        <h2 id="how-title">How it works</h2>
-        <a class="btn btn-primary" href="/diagnostic/">Book the Diagnostic</a>
-      </div>
-      <ol class="steps">
-        <li><h3>Talk.</h3><p>A free 30-minute call about what's going on in your business.</p></li>
-        <li><h3>Get the plan.</h3><p>If you want it, I write up the audit and your 30-day plan.</p></li>
-        <li><h3>Build it.</h3><p>We set up the systems and tools together, and you keep everything.</p></li>
-      </ol>
-    </div>
-  </div>
-</section>
-
+<!-- FREE GUIDE -->
 <section class="sec dark guide-band" aria-labelledby="guide-title">
   <div class="wrap">
     <div class="guide-feature">
@@ -237,48 +241,31 @@ scripts: <script src="/js/forms.js?v={{V}}" defer></script><script src="/js/quiz
   </div>
 </section>
 
-<!-- 06 QUESTIONS + sticky decision card -->
-<section class="sec numbered" id="faq" data-nav-section="faq" aria-labelledby="faq-title">
-  <div class="wrap cols">
-    <div class="marg"><span class="num" aria-hidden="true">06</span></div>
-    <div class="content split">
-      <div>
-        <h2 id="faq-title">Questions</h2>
-        <div class="faq">
-          <details>
-            <summary>Is the Diagnostic a sales call?</summary>
-            <p class="ans">It's 30 minutes to figure out where your business is stuck. If the written report would help, I'll tell you about it on the call. If it wouldn't, you still leave knowing what to fix first.</p>
-          </details>
-          <details>
-            <summary>What does it cost?</summary>
-            <p class="ans">The call is free. If you want the written report, I'll walk you through pricing on the call.</p>
-          </details>
-          <details>
-            <summary>Do I need to be good with tech or AI?</summary>
-            <p class="ans">No. Most of the owners I work with run their business from their phone. I'll show you exactly which tools to use and how.</p>
-          </details>
-          <details>
-            <summary>What size business do you work with?</summary>
-            <p class="ans">[MEGAN TO CONFIRM RANGE]</p>
-          </details>
-          <details>
-            <summary>Do you only work with businesses in San Diego?</summary>
-            <p class="ans">I'm based in San Diego and work with owners anywhere over video calls. <span class="ph">[MEGAN TO CONFIRM]</span></p>
-          </details>
-          <details>
-            <summary>How soon will I see a change?</summary>
-            <p class="ans">[MEGAN TO CONFIRM]</p>
-          </details>
-        </div>
-      </div>
-      <div class="side">
-        <div class="decide card">
-          <h3>Still deciding? Start with the free call.</h3>
-          <p>30 minutes. No prep. You leave knowing what to fix first, whether or not we work together.</p>
-          <a class="btn btn-primary btn-block" href="/diagnostic/">Book the Diagnostic</a>
-          <p class="small" style="margin:.75rem 0 0;text-align:center">Or <a href="/resources/{{GUIDE_SLUG}}/">get the free guide</a> first.</p>
-        </div>
-      </div>
+<!-- QUESTIONS -->
+<section class="sec" id="faq" data-nav-section="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <h2 id="faq-title">Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Is the Diagnostic a sales call?</summary>
+        <p class="ans">It's 30 minutes to figure out where your business is stuck. If the written report would help, I'll tell you about it on the call. If it wouldn't, you still leave knowing what to fix first.</p>
+      </details>
+      <details>
+        <summary>What does it cost?</summary>
+        <p class="ans">The call is free. If you want the written report, I'll walk you through pricing on the call.</p>
+      </details>
+      <details>
+        <summary>Do I need to be good with tech or AI?</summary>
+        <p class="ans">No. Most of the owners I work with run their business from their phone. I'll show you exactly which tools to use and how.</p>
+      </details>
+      <details>
+        <summary>Do you only work with businesses in San Diego?</summary>
+        <p class="ans">I'm based in San Diego and work with owners anywhere over video calls. <span class="ph">[MEGAN TO CONFIRM]</span></p>
+      </details>
+      <details>
+        <summary>How soon will I see a change?</summary>
+        <p class="ans">The 30-day plan is written so the first changes land in the first week. Most owners feel the difference when the first thing they used to chase starts happening without them. <span class="ph">[DRAFT, MEGAN TO CONFIRM]</span></p>
+      </details>
     </div>
   </div>
 </section>
