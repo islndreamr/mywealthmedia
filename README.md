@@ -39,6 +39,10 @@ npx serve frontend/public
 
 Netlify publishes `frontend/public` as-is. It never runs the build.
 
+## Replacing a photo or image
+
+Everything in `frontend/public/assets/` is cached by browsers for a year. If you replace an image, give the new file a new name and update the page that uses it, or visitors will keep seeing the old one.
+
 ## Adding a guide
 
 Add an entry to `site/data/guides.json`, run the build, commit. The guide gets its own page at `/resources/<slug>/` and a card on the Free Resources page. A guide shows only when `approved` is `true` (Megan's rule: she sees the real file first).
