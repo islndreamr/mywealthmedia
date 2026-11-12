@@ -110,7 +110,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .form-row{display:grid;gap:1rem}
 @media (min-width:640px){.form-row{grid-template-columns:1fr 1fr}}
 .form-note{font-size:.9rem;color:var(--muted);margin-top:.5rem}
-.form-note a,.hero-under a,.prose a,.faq .ans a{display:inline-block;padding:.5em 0}
+.form-note a,.hero-under a,.prose a,.faq .ans a{display:inline-block;padding:.75em 0}
 .dark .form-note{color:var(--rail-text)}
 .form-error{color:#8A1F1F;font-weight:600;font-size:.9rem;margin-top:.25rem}
 .dark .form-error{color:var(--petal)}
@@ -192,7 +192,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .hero-under{margin:.9rem 0 0;font-size:.95rem;color:var(--muted);max-width:40ch}
 .portrait{aspect-ratio:4/5;max-width:420px;margin:0 auto;border-radius:999px 999px 10px 10px;border:2px solid var(--gold);background:var(--sand);display:grid;place-items:center;text-align:center;padding:24px;overflow:hidden;position:relative}
 .portrait img{width:100%;height:100%;object-fit:cover}
-.portrait .cap{position:absolute;bottom:12px;left:0;right:0;text-align:center;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze);font-weight:700}
+.portrait .cap{position:absolute;bottom:12px;left:0;right:0;text-align:center;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);font-weight:700}
 .scroll-cue{display:flex;align-items:center;gap:16px;margin-top:clamp(28px,4vw,48px);color:var(--bronze);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
 .scroll-cue::before,.scroll-cue::after{content:"";flex:1;height:1px;background:var(--gold)}
 
@@ -313,7 +313,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 @media (min-width:720px){.footer-grid{grid-template-columns:1.2fr 1fr 1fr}}
 .footer .mono{font-family:var(--font-display);font-size:1.6rem;color:var(--cream);line-height:1}
 .footer .tag{display:block;margin-top:6px;color:var(--rail-text)}
-.footer h4{font-family:var(--font-body);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--petal);margin:0 0 .75rem}
+.footer .fh{font-family:var(--font-body);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--petal);margin:0 0 .75rem}
 .footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
 .footer a{color:var(--cream);text-decoration:none}
 .footer a:hover{text-decoration:underline}
