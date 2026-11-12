@@ -4,6 +4,24 @@ Nov 12, 2026. Nothing is deployed. Your live site is untouched.
 
 Preview link: https://deploy-preview-1--mywealthmedia.netlify.app (updates on its own every time I push).
 
+## Update, Nov 12: your copy is in
+
+Built from the text you sent (the "Build a business that doesn't depend on you to run" page). Where it went:
+
+- Hero line under the button: "Operations. Automation. AI-powered systems. Built by someone who's actually run the business."
+- Standfirst: "From the way leads enter your business to how your team delivers, gets paid and stays accountable, I build the infrastructure that makes growth manageable." Then your fractional COO plus technical capability line.
+- The proof block now leads with $1M+ in 8 months on systems you built from the ground up, with the 20,000 leads and 48 team members underneath. It stays "CEO, online sales training company" with no company name, per your Nov 9 rule. Your own writing guide also lists 7FCC internal financials as private, so I kept the name off. If you want 7FCC named, say so and it is a one-word change.
+- New section after services, "What I bring to the table," with your three areas and your "from strategy to execution" line as the closing thought.
+- The story module is now your "I learned business from the inside out" text, signed "Founder, My Wealth Media. Fractional COO and AI Systems Architect."
+- The booking block headline is your line: "You've already proven you can build a business. Let's build one that can scale."
+- Footer reads "Fractional COO and AI Systems Architect."
+
+Two choices I left to you:
+1. Headline. I kept "Build the business that keeps growing when you step away," which you chose this morning. Your new text opens with "Build a business that doesn't depend on you to run." Either works with the layout. Say which.
+2. Button wording. Your text says "Book a Business Diagnostic." The site says "Book the Diagnostic" everywhere, per the handoff. Say if you want it changed.
+
+The salon numerals (8 years, top 2%, dozens mentored, about 1,000 clients) stayed under the story, since your new text covers the same ground in prose.
+
 ## Update, Nov 12 evening: the research pass (groups A to D)
 
 Built from the three-tier research in `docs/design-research-3-tiers.md`.

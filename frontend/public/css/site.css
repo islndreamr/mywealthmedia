@@ -533,3 +533,10 @@ button,input,select,textarea{font:inherit;color:inherit}
 .book{border-top:1px solid var(--line)}
 .book .stand{margin-bottom:.5em}
 .book .check li{font-size:1rem}
+
+/* what I bring */
+.bring{display:grid;gap:28px;border-top:1px solid var(--dark-line);padding-top:clamp(24px,3vw,36px);margin-top:clamp(16px,2vw,24px)}
+@media (min-width:900px){.bring{grid-template-columns:1fr 1fr 1fr;column-gap:clamp(28px,4vw,56px)}}
+.bring h3{margin-bottom:.4em}
+.bring p{color:var(--rail-text);max-width:38ch;margin:0}
+.book h2{max-width:20ch}
