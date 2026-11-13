@@ -32,16 +32,17 @@ No red anywhere. No gradients. No purple. Dark surfaces may carry a faint paper 
 
 ## 2. Type
 
-Two families, self-hosted from Fontsource, both under the SIL Open Font License.
+Two systems, one body font. Which headline font depends on where the piece lives.
 
-- Headlines, pull quotes, big numerals, the MWM monogram: **Newsreader**, weight 300 for display sizes, 400 for smaller headings. Italic 300 is the accent style.
-- Everything else: **Hanken Grotesk**, 400 body, 600 for emphasis and labels, 700 for buttons.
+- **On the website**: headlines, pull quotes, big numerals and the MWM monogram are **Newsreader**, weight 300 for display sizes, 400 for smaller headings, italic 300 for the one accent phrase. Megan chose it on Nov 12, 2026.
+- **In anything delivered as a file**: PDF guides, field manuals, playbooks, workbooks, slide decks, one-pagers, proposals, and graphics made as images. Headlines and big numerals are **Gloock** 400, exactly as `mwm-field-manual` describes. Megan prefers Gloock for deliverables (confirmed Nov 13, 2026, with The Launch Playbook as the reference). Gloock has no italic, so the accent in a file is a size or colour change, never a fake italic.
+- **Everywhere**: everything that is not a headline is **Hanken Grotesk**, 400 body, 600 for emphasis and labels, 700 for buttons. Email cannot embed fonts, so email is Hanken Grotesk with a system sans fallback and no display font.
 
-Newsreader replaced Gloock on Nov 12, 2026. Use Newsreader for new manuals too, so the guide and the site match. Never use Inter, Roboto, Arial, Poppins, Montserrat, Open Sans, DM Sans, Space Grotesk, Plus Jakarta, Fraunces, Playfair or Gloock.
+All three are self-hosted from Fontsource under the SIL Open Font License. Never use Inter, Roboto, Arial, Poppins, Montserrat, Open Sans, DM Sans, Space Grotesk, Plus Jakarta, Fraunces or Playfair. Do not put Gloock on the website or Newsreader in a PDF; the split is the point.
 
 Four sizes plus one label size, and that is the whole scale:
 
-| Role | Web | Print |
+| Role | Web (Newsreader) | Print (Gloock) |
 | --- | --- | --- |
 | Display | about 7 percent of viewport width, light, line-height 1 | 64pt cover, 44pt section opener |
 | Heading | 2.0 to 2.75rem, light | 30pt |
@@ -49,7 +50,7 @@ Four sizes plus one label size, and that is the whole scale:
 | Body | 1.0625rem, line-height 1.55, measure 55 to 65 characters | 10.5pt, line-height 1.55 |
 | Label | 0.8rem, 600 weight, sentence case | 7.5pt |
 
-The accent is one italic phrase inside a headline, at most once per screen. "Build a business that doesn't *depend on you* to run." Nothing else is italic in a headline.
+On the web the accent is one italic phrase inside a headline, at most once per screen: "Build a business that doesn't *depend on you* to run." Nothing else is italic in a headline.
 
 ## 3. Layout rules that make it feel designed
 
@@ -112,11 +113,11 @@ What is not on the site and must not be linked yet: the Payhip store, the Substa
 
 **Website.** Source lives in the GitHub repo `islndreamr/mywealthmedia`. Pages are written in `site/pages/`, the shared shell in `site/layout.html`, guides in `site/data/guides.json`, styles in `frontend/public/css/site.css` with every color named at the top. Run `node tools/build.js` from the repo root after any edit and commit the generated `frontend/public/` too; Netlify publishes that folder with no build step. Replaced images need new file names (assets are cached for a year). Forms post to `netlify/functions/lead.js`, which forwards to GoHighLevel. Read `README.md` in the repo before editing.
 
-**PDF guides and manuals.** Use `mwm-field-manual` for the page system, build steps and checks, with these overrides: Newsreader instead of Gloock, the layout rules in section 3, and one numeral per page at most outside the rail. A guide's cover is portrait 3:4, at least 900 by 1200 pixels, with a real photo of Megan if a photo is used. The TEAM Prompts (Nov 2026) is the reference guide.
+**PDF guides and manuals.** Use `mwm-field-manual` for the fonts (Gloock and Hanken Grotesk), the page system, build steps and checks. Add the layout rules in section 3 and one numeral per page at most outside the rail. The Launch Playbook (Nov 2026) is the reference manual. A guide's cover is portrait 3:4, at least 900 by 1200 pixels, with a real photo of Megan if a photo is used. The TEAM Prompts (Nov 2026) is the reference guide.
 
 **Email.** Hanken Grotesk only (system sans fallback). Cream background, ink text, one pink button. Subject lines in sentence case, under 50 characters, no emoji. One idea per email. Sent from an address on mywealthmedia.com through GoHighLevel.
 
-**Social graphics and slides.** Cream or ink background, one Newsreader line as the only large thing, Hanken for the rest, pink once. Photo rules from section 3. The MWM monogram is text in Newsreader until a real mark exists.
+**Social graphics and slides.** Cream or ink background, one Gloock line as the only large thing, Hanken for the rest, pink once. Photo rules from section 3. The MWM monogram is text in the medium's headline font until a real mark exists.
 
 ## 7. Before delivering anything
 
