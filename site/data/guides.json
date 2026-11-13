@@ -1,0 +1,19 @@
+[
+  {
+    "slug": "team-prompts-guide",
+    "title": "The TEAM Prompts",
+    "promise": "Brief ChatGPT or Claude the way you'd brief a new hire, and hand off the messages that pull you back in after hours.",
+    "topic": "AI Tools",
+    "readTime": "10 min",
+    "cover": "/assets/img/team-guide-cover.jpg",
+    "pdf": "",
+    "points": [
+      "A 60-second check that shows which after-hours task to hand off first.",
+      "Six copy-paste prompts, starting with one that turns a voice memo into steps for your team.",
+      "How to save your brief once so you stop re-explaining your business."
+    ],
+    "featured": true,
+    "approved": true,
+    "_notes": "Approved by Megan on Nov 12, 2026 (she sent the file). The PDF is kept at site/guides/The-TEAM-Prompts.pdf, outside the published folder, so it is not downloadable from the site. When GoHighLevel is connected, upload the PDF there and let the email deliver it; the pdf field stays empty on the site. The slug becomes the web address: /resources/<slug>/. Anything written in [BRACKETS] shows on the site as a marked placeholder."
+  }
+]

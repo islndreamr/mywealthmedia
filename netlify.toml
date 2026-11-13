@@ -1,9 +1,11 @@
-# My Wealth Media — static site, no build step.
+# My Wealth Media: static site, no build step.
 # Netlify serves the frontend/public folder as-is.
+# The pages are generated ahead of time with `node tools/build.js` and committed.
 
 [build]
   publish = "frontend/public"
   command = ""
+  functions = "netlify/functions"
 
 [[headers]]
   for = "/assets/*"
@@ -11,21 +13,17 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "/style.css"
+  for = "/css/*"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
-  for = "/script.js"
+  for = "/js/*"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
-  for = "/*.html"
+  for = "/*"
   [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
-
-[[headers]]
-  for = "/"
-  [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

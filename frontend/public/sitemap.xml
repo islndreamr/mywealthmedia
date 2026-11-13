@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://mywealthmedia.com/</loc>
-  </url>
+  <url><loc>https://mywealthmedia.com/</loc></url>
+  <url><loc>https://mywealthmedia.com/resources/</loc></url>
+  <url><loc>https://mywealthmedia.com/diagnostic/</loc></url>
+  <url><loc>https://mywealthmedia.com/privacy/</loc></url>
+  <url><loc>https://mywealthmedia.com/terms/</loc></url>
+  <url><loc>https://mywealthmedia.com/resources/team-prompts-guide/</loc></url>
 </urlset>

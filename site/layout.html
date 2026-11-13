@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#141110">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESC}}">
+  <link rel="canonical" href="https://mywealthmedia.com{{PATH}}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="My Wealth Media">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESC}}">
+  <meta property="og:url" content="https://mywealthmedia.com{{PATH}}">
+  <meta property="og:image" content="https://mywealthmedia.com/assets/og-image-v2.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/favicon-180.png">
+  <link rel="preload" href="/assets/fonts/newsreader-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/hanken-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/site.css?v={{V}}">
+  {{HEAD}}
+</head>
+<body class="{{BODYCLASS}}">
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Desktop rail -->
+<nav class="rail" aria-label="Site">
+  <span class="rail-fill" aria-hidden="true"></span>
+  <a class="rail-logo" href="/">
+    <span class="mono">MWM</span>
+    <span class="sub">My Wealth<br>Media</span>
+  </a>
+  <ol class="rail-nav">
+    <li><a href="{{H}}#start" data-nav-link="start">Start</a></li>
+    <li><a href="{{H}}#results" data-nav-link="results">Results</a></li>
+    <li><a href="{{H}}#where" data-nav-link="where">Services</a></li>
+    <li><a href="{{H}}#how" data-nav-link="how">How it works</a></li>
+    <li><a href="{{H}}#faq" data-nav-link="faq">Questions</a></li>
+  </ol>
+  <div class="rail-foot">
+    <a href="/resources/" {{CUR_RES}}>Free<br>Resources</a>
+    <a class="rail-cta" href="/diagnostic/" {{CUR_DIAG}}>Book the<br>Diagnostic</a>
+  </div>
+</nav>
+
+<!-- Mobile header -->
+<header class="mhead">
+  <a class="brand" href="/"><span class="mono">MWM</span><span class="name">My Wealth Media</span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+</header>
+<div class="mprog" aria-hidden="true"><span></span></div>
+<nav class="mmenu" id="mmenu" hidden aria-label="Site">
+  <ol>
+    <li><a href="{{H}}#start" data-nav-link="start">Start</a></li>
+    <li><a href="{{H}}#results" data-nav-link="results">Results</a></li>
+    <li><a href="{{H}}#where" data-nav-link="where">Services</a></li>
+    <li><a href="{{H}}#how" data-nav-link="how">How it works</a></li>
+    <li><a href="{{H}}#faq" data-nav-link="faq">Questions</a></li>
+  </ol>
+  <div class="mmenu-foot">
+    <a href="/resources/">Free Resources</a>
+    <a href="/diagnostic/">Book the Diagnostic</a>
+  </div>
+</nav>
+
+<div class="page">
+<main id="main">
+{{BODY}}
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <span class="mono">MWM</span>
+        <span class="tag">My Wealth Media LLC, San Diego</span>
+        <span class="tag">Fractional COO and AI Systems Architect</span>
+      </div>
+      <div>
+        <p class="fh">Get in touch</p>
+        <ul>
+          <li><a href="mailto:megan@mywealthmedia.com">megan@mywealthmedia.com</a></li>
+          <li><a href="https://instagram.com/meganlemay.co" rel="noopener">Instagram: @meganlemay.co</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="fh">Around the site</p>
+        <ul>
+          <li><a href="/resources/">Free Resources</a></li>
+          <li><a href="/diagnostic/">Book the Diagnostic</a></li>
+          <li><a href="/privacy/">Privacy</a></li>
+          <li><a href="/terms/">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Results vary. Client results shown are real, with names kept private.</span>
+      <span>&copy; <span data-year>2026</span> My Wealth Media LLC</span>
+    </div>
+  </div>
+</footer>
+</div>
+
+<!-- Mobile sticky bottom bar -->
+<div class="mbar">
+  <a class="btn btn-primary" href="/diagnostic/">Book the Diagnostic</a>
+</div>
+
+<script src="/js/site.js?v={{V}}" defer></script>
+{{SCRIPTS}}
+</body>
+</html>

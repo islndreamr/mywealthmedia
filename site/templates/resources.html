@@ -1,0 +1,31 @@
+<section class="section" aria-labelledby="res-title">
+  <div class="wrap">
+    <div class="res-head">
+      <div>
+        <h1 id="res-title" style="font-size:clamp(2.4rem,5vw,4rem)">Free Resources</h1>
+        <p class="lede">Guides, prompts and playbooks for owners who run their business from their phone.</p>
+      </div>
+      <div class="search">
+        <label class="sr-only" for="res-search">Search free resources</label>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input class="input" id="res-search" type="search" placeholder="Search free resources" autocomplete="off">
+      </div>
+    </div>
+
+    <ul class="pills" aria-label="Filter by topic">
+      <li><button class="pill" type="button" data-topic="" aria-pressed="true">All</button></li>
+      <li><button class="pill" type="button" data-topic="AI Tools" aria-pressed="false">AI Tools</button></li>
+      <li><button class="pill" type="button" data-topic="Operations" aria-pressed="false">Operations</button></li>
+      <li><button class="pill" type="button" data-topic="Sales" aria-pressed="false">Sales</button></li>
+      <li><button class="pill" type="button" data-topic="Launch" aria-pressed="false">Launch</button></li>
+    </ul>
+
+    {{FEATURED}}
+
+    <h2 class="sr-only">All guides</h2>
+    <div class="res-grid" id="res-grid">
+      {{CARDS}}
+    </div>
+    <p class="res-empty" id="res-empty" hidden aria-live="polite">Nothing matches that yet. More guides are on the way.</p>
+  </div>
+</section>
