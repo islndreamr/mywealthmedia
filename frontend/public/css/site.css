@@ -540,3 +540,6 @@ button,input,select,textarea{font:inherit;color:inherit}
 .bring h3{margin-bottom:.4em}
 .bring p{color:var(--rail-text);max-width:38ch;margin:0}
 .book h2{max-width:20ch}
+
+.fit-solo{margin-top:0;padding-top:0;border-top:0;max-width:62ch}
+.fit-solo h2{margin-bottom:.4em}
