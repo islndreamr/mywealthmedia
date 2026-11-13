@@ -19,7 +19,7 @@
   <link rel="apple-touch-icon" href="/assets/favicon-180.png">
   <link rel="preload" href="/assets/fonts/newsreader-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/hanken-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/site.css?v=6863496">
+  <link rel="stylesheet" href="/css/site.css?v=9213726">
   
 </head>
 <body class="">
@@ -87,11 +87,10 @@
       <div>
         <div class="card">
           <h2 style="font-size:1.5rem">Pick a time</h2>
-          <!-- TODO (Megan, Nov 12): the online calendar is being built. When the link is ready, replace this block with the embed. -->
           <div id="calendar">
-            <p>Email me and I'll reply with a few times that work.</p>
-            <a class="btn btn-primary btn-block" href="mailto:megan@mywealthmedia.com?subject=Diagnostic%20call">Email megan@mywealthmedia.com</a>
-            <p class="small" style="margin:1rem 0 0">Not ready to talk? <a href="/resources/">Get the free guide</a> first.</p>
+            <iframe src="https://api.leadconnectorhq.com/widget/booking/6bOS6DOABsEqP9RKT3CT" style="width:100%;border:none;overflow:hidden;min-height:640px" scrolling="no" title="Book the Diagnostic" loading="lazy"></iframe>
+            <p class="small" style="margin:1rem 0 0">Calendar not loading? Email <a href="mailto:megan@mywealthmedia.com?subject=Diagnostic%20call">megan@mywealthmedia.com</a> and I'll reply with times.</p>
+            <p class="small" style="margin:.5rem 0 0">Not ready to talk? <a href="/resources/">Get the free guide</a> first.</p>
           </div>
         </div>
       </div>
@@ -176,7 +175,7 @@
   <a class="btn btn-primary" href="/diagnostic/">Book the Diagnostic</a>
 </div>
 
-<script src="/js/site.js?v=6863496" defer></script>
+<script src="/js/site.js?v=9213726" defer></script>
 
 </body>
 </html>

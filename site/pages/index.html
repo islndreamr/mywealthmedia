@@ -69,6 +69,7 @@ scripts: <script src="/js/forms.js?v={{V}}" defer></script><script src="/js/quiz
           <a class="btn btn-primary btn-block" href="/diagnostic/">Book the Diagnostic</a>
           <div class="quiz-email">
             <form data-lead-form="quiz" novalidate>
+              <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
               <p><strong>Want the full breakdown?</strong> I'll send you what each answer means and what to fix first.</p>
               <div class="field"><label for="quiz-first">First name</label><input class="input" id="quiz-first" name="firstName" autocomplete="given-name" required></div>
               <div class="field"><label for="quiz-email">Email</label><input class="input" id="quiz-email" name="email" type="email" autocomplete="email" required></div>
@@ -77,7 +78,7 @@ scripts: <script src="/js/forms.js?v={{V}}" defer></script><script src="/js/quiz
             </form>
             <div class="thanks" data-thanks hidden>
               <h3>You're in.</h3>
-              <p>Your breakdown is on its way to <strong data-thanks-email></strong>.</p>
+              <p>Thanks. I'll send your breakdown to <strong data-thanks-email></strong> within a day.</p>
             </div>
             <p class="small" style="margin:1rem 0 0"><button type="button" class="linkbtn" data-quiz-again>Take it again</button></p>
           </div>
@@ -250,6 +251,7 @@ scripts: <script src="/js/forms.js?v={{V}}" defer></script><script src="/js/quiz
           {{GUIDE_POINTS}}
         </ul>
         <form class="guide-form" data-lead-form="guide" data-guide="{{GUIDE_SLUG}}" novalidate>
+          <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
           <div class="field"><label for="g-first">First name</label><input class="input" id="g-first" name="firstName" autocomplete="given-name" required></div>
           <div class="field"><label for="g-email">Email</label><input class="input" id="g-email" name="email" type="email" autocomplete="email" required></div>
           <button class="btn btn-primary" type="submit">Send me the guide</button>
@@ -257,7 +259,7 @@ scripts: <script src="/js/forms.js?v={{V}}" defer></script><script src="/js/quiz
         </form>
         <div class="thanks" data-thanks hidden>
           <h3>You're in.</h3>
-          <p>Your guide is on its way to <strong data-thanks-email></strong>. While you wait, want to see where your business is stuck? <a href="#quiz">Take the 2-minute quiz.</a></p>
+          <p>Thanks. I'll send the guide to <strong data-thanks-email></strong> within a day. While you wait, want to see where your business is stuck? <a href="#quiz">Take the 2-minute quiz.</a></p>
         </div>
         <p class="form-note"><a href="/resources/">See all free resources</a></p>
       </div>

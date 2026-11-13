@@ -5,6 +5,7 @@
 [build]
   publish = "frontend/public"
   command = ""
+  functions = "netlify/functions"
 
 [[headers]]
   for = "/assets/*"

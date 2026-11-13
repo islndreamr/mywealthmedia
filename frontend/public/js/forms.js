@@ -1,9 +1,8 @@
 /* My Wealth Media | forms.js
    ONE place every lead form on the site posts to.
 
-   TODO: Megan chose GoHighLevel (Nov 12). Replace the body of sendLead()
-   with the GoHighLevel submit (form webhook or API). Until then nothing is sent anywhere. The form just shows its
-   thank-you state so the pages can be reviewed.
+   Connected to GoHighLevel on Nov 12, 2026 through netlify/functions/lead.js.
+   The honeypot field named "company" must stay empty; bots that fill it are dropped.
 
    Every form that uses this has:
      data-lead-form="guide" | "quiz" | "diagnostic"   what kind of lead it is
@@ -15,12 +14,14 @@
 
   /* ---- The one swappable handler ---------------------------------- */
   function sendLead(lead) {
-    // TODO: connect GoHighLevel here. Return a Promise that resolves on success.
-    // Example shape of `lead`:
-    // { kind: "guide", guide: "team-prompts-guide", firstName: "Sam",
-    //   email: "sam@example.com", score: 17, page: "/resources/team-prompts-guide/" }
-    if (window.console) console.info("[forms.js] lead captured locally only (no CRM connected yet):", lead);
-    return Promise.resolve();
+    // Posts to a small Netlify function (netlify/functions/lead.js) that forwards to GoHighLevel.
+    return fetch("/.netlify/functions/lead", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(lead)
+    }).then(function (res) {
+      if (!res.ok) throw new Error("Lead not accepted: " + res.status);
+    });
   }
 
   /* ---- Wiring ----------------------------------------------------- */
@@ -43,7 +44,9 @@
         return;
       }
 
+      var hp = form.querySelector('[name="company"]');
       var lead = {
+        company: hp ? hp.value : "",
         kind: form.getAttribute("data-lead-form"),
         guide: form.getAttribute("data-guide") || null,
         firstName: first ? first.value.trim() : null,
@@ -65,7 +68,7 @@
           if (h) { h.setAttribute("tabindex", "-1"); h.focus(); }
         }
       }).catch(function () {
-        if (err) { err.textContent = "Something went wrong. Please try again."; err.hidden = false; }
+        if (err) { err.textContent = "Something went wrong. Please try again, or email megan@mywealthmedia.com."; err.hidden = false; }
       }).then(function () {
         if (btn) { btn.disabled = false; btn.removeAttribute("aria-busy"); }
       });
