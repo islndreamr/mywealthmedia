@@ -473,17 +473,18 @@ button,input,select,textarea{font:inherit;color:inherit}
   .hero2-actions .btn{min-height:52px}
   .hero2-proof{margin-top:1rem;font-size:.95rem}
 }
-/* desktop: the photo fills the right half, head to waist, bottom-anchored; text centred on the left */
+/* desktop: the photo keeps its own shape (1333 by 1180) and sits against the right edge,
+   sized by the screen height so the whole frame is always visible */
 @media (min-width:900px){
   .hero2{min-height:clamp(620px,86vh,900px);display:flex;align-items:center}
   .hero2-wrap{width:100%;padding-top:40px;padding-bottom:40px}
-  .hero2-photo{position:absolute;top:0;right:0;bottom:0;width:52%;margin:0}
-  .hero2-photo img{object-position:50% 0%}
+  .hero2-photo{position:absolute;top:0;right:0;bottom:0;width:min(52%,calc(clamp(620px,86vh,900px) * 1.13));margin:0}
+  .hero2-photo img{object-position:100% 0%}
   .hero2-photo::after{content:"";position:absolute;left:0;top:0;bottom:0;width:26%;background:linear-gradient(90deg,var(--cream),rgba(246,240,230,0))}
   .hero2 h1{max-width:58%}
   .hero2-actions,.hero2-proof{max-width:48%}
 }
-@media (min-width:1600px){.hero2-wrap{max-width:1400px}.hero2-photo{width:50%}.hero2 h1{max-width:60%}}
+@media (min-width:1600px){.hero2-wrap{max-width:1400px}.hero2 h1{max-width:60%}}
 
 /* standfirst band */
 .standfirst{--pad:clamp(36px,5vw,64px);border-top:1px solid var(--line)}
